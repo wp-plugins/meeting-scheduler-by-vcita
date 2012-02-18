@@ -6,7 +6,7 @@ Requires at least: 2.8
 Tested up to: 3.3.1
 Stable tag: trunk
  
-vCita meeting scheduler allows website visitors to book online, face to face or phone meetings. It also provides a platform for Payment Processing
+vCita meeting scheduler allows website visitors to book online, phone or face-to-face meetings. It also provides a platform for Collecting Payment
  
 == Description ==
 
