@@ -3,7 +3,7 @@ Contributors: vCita.com
 Donate link: 
 Tags: Appointment Scheduler, book meetings, book appointment, meet clients, meeting scheduler, online meeting, scheduling, vcita, video meeting
 Requires at least: 2.8
-Tested up to: 3.3.1
+Tested up to: 3.3.2
 Stable tag: trunk
  
 vCita meeting scheduler allows website visitors to book online, phone or face-to-face meetings. It also provides a platform for Collecting Payment
@@ -74,12 +74,6 @@ You will then have the option to customize your widget, add your photo, set meet
 Once you are logged in to vCita, you can always change your settings from the Wordpress plugin settings page.<br>
 <br>
 
-= I want to create my own widget format (colors, buttons etc) =
-You can create your own buttons to better match your site colors or style.<br>
-All you need is to maintain links for "Send a Message" and "Set a Meeting".<br>
-Those links can be found at your vCita dashboard under <a href="http://www.vcita.com/get_widget">Get Widget</a> <br>
-<br>
-
 = How do I change the size of the widget? =
 Use the following code sample:<br>
 To place widget horizontally - [vCitaMeetingScheduler type=widget height=200]<br>
@@ -93,9 +87,15 @@ NOTE: if you are integrating the widget as a sidebar, you should use the "Text" 
 Do not use the vCita widget.
 <br>
 
+= I want to create my own widget format (colors, buttons etc) =
+You can create your own buttons to better match your site colors or style.<br>
+All you need is to maintain links for "Send a Message" and "Set a Meeting".<br>
+Those links can be found at your vCita dashboard under <a href="http://www.vcita.com/get_widget">Get Widget</a> <br>
+<br>
 
-= How to manually add vCita Plugin  =
- 
+
+= How to manually add vCita -> I can't install vCita - how do I manually install vCita plugin ?  =
+
 1. Click on the red "Download Version x.x" button on the right side of this page.
 1. After the download has finished, extract the files.
 1. Upload the "meeting-scheduler-by-vcita" folder to your server in "/wp-content/plugins" directory.
@@ -106,14 +106,27 @@ Do not use the vCita widget.
 1. Follow instructions sent to you by email from vCita.com to complete configuration.
 <br>
 
-= How to use vCita Widget =
-vCita also provides alternative smaller widgets that can fit anywhere in your website providing a similar contact and scheduling capabilities.
-<br>To integrate those widgets after installing and activating the plug-in:
+= How do I create a listing of Multiple Contact Widgets for different people on one page? =
+You can use vCita to create multiple profile widgets on one page.<br>
+All you need is the name and email of each user you wish to list.<br>
 
-1. Click the "Widgets" menu on the left
-1. Drag the "vCita Widget" from the "Available Widgets" list to one of the widget "areas" in the right.
-1. In the widget parameter area, enter your email, first and last name and click "Save".
-1. Follow instructions sent to you by email to complete widget configuration
+Simply have multiple lines in the following format:<br>
+[vCitaMeetingScheduler type=widget height=200 email="support@vcita.com" first_name="Mike" last_name="Wright"] <br>
+
+Now visitors can send a message or set a meeting with each of the users listed.<br>
+Each user will get an email to confirm his email address and upload an image to complete his profile.<br>
+
+<br>
+For other FAQ about vCita web-service please refer to <a href="http://www.vcita.com/about/faq">vCita FAQ</a>
+<br>
+
+= What are vCita Terms and Conditions? =
+Please visit <a href="http://www.vcita.com/about/terms_of_service">Terms and Conditions</a>
+<br>
+
+= What is vCita Privacy Policy? =
+Please visit <a href="http://www.vcita.com/about/privacy_policy">Privacy Policy</a>
+<br>
 
 == Screenshots ==
 
@@ -125,6 +138,13 @@ vCita also provides alternative smaller widgets that can fit anywhere in your we
 
 
 == Changelog == 
+
+ = Version 2.0.0 (8 May 2012) = 
+  * Settings page now directs to vCita site for much more customization options
+  * Redesign of the settings page to be simplier and contain more relevant information
+  * Changed to use the new API 
+  * Fixed all warnings for referencing undefined array indices 
+  * Updated FAQs
  
- = Version 1.0.0 (12 Feb 2012)
- * Initial Version
+ = Version 1.0.0 (12 Feb 2012) = 
+  * Initial Version
