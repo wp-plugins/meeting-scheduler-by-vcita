@@ -138,7 +138,9 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy">Privacy Policy<
 
 
 == Changelog == 
-
+ = Version 2.1.0 (7 Aug 2012) = 
+  * Embed code is now dynamically created
+ 
  = Version 2.0.0 (8 May 2012) = 
   * Settings page now directs to vCita site for much more customization options
   * Redesign of the settings page to be simplier and contain more relevant information

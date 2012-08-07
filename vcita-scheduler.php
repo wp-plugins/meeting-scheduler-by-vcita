@@ -3,7 +3,7 @@
 Plugin Name: Meeting Scheduler by vCita
 Plugin URI: http://www.vcita.com
 Description: vCita meeting scheduler allows website visitors to book online, phone or face-to-face meetings. It also provides a platform for Collecting Payment
-Version: 2.0.0
+Version: 2.1.0
 Author: vCita.com
 Author URI: http://www.vcita.com
 */
@@ -11,11 +11,11 @@ Author URI: http://www.vcita.com
 /* --- Static initializer for Wordpress hooks --- */
 
 // Check if vCita plugin already installed.
-if (vcita_next_gen_check_plugin_available('vcita_widget') || vcita_next_gen_check_plugin_available('vcita_customer_support')) {
+if (vcita_next_gen_check_plugin_available('vcita_widget') || vcita_next_gen_check_plugin_available('vcita_support')) {
 	add_action('admin_notices', 'vcita_next_gen_installed_warning');
 } else {
 	define('VCITA_SERVER_BASE', "www.vcita.com"); /* Don't include the protocol, added dynamically */
-	define('VCITA_WIDGET_VERSION', '2.0.0');
+	define('VCITA_WIDGET_VERSION', '2.1.0');
 	define('VCITA_WIDGET_PLUGIN_NAME', 'Meeting Scheduler by vCita');
 	define('VCITA_WIDGET_KEY', 'vcita_scheduler');
 	define('VCITA_WIDGET_API_KEY', 'wp-v-schd');
@@ -41,7 +41,7 @@ if (vcita_next_gen_check_plugin_available('vcita_widget') || vcita_next_gen_chec
  * Notify about other vCita plugin already available
  */ 
 function vcita_next_gen_installed_warning() {
-	echo "<div id='vcita-warning' class='error'><p><B>".__("vCita Plugin is already installed")."</B>".__(', please delete "<B>Meeting Scheduler by vCita</B>" and use the available "<B>Next Gen Contact Form by vCita</B>" plugin')."</p></div>";
+	echo "<div id='vcita-warning' class='error'><p><B>".__("vCita Plugin is already installed")."</B>".__(', please delete "<B>Meeting Scheduler by vCita</B>" and use the available "<B>Contact Form by vCita</B>" plugin')."</p></div>";
 }
 
 /**

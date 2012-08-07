@@ -418,8 +418,7 @@ function vcita_add_contact($atts) {
         'id' => '',
         'title' => '',
         'width' => '100%',
-        'height' => '400px',
-		'theme' => 'blue',
+        'height' => '450px',
     ), $atts));
 
 	// If user isn't available - try and create one.
@@ -443,7 +442,7 @@ function vcita_add_contact($atts) {
 			echo "<h2 style=\"margin-bottom:8px;\">$title</h2>";
 		}
 
-		return vcita_create_embed_code($type, $id, $width, $height, $theme);
+		return vcita_create_embed_code($type, $id, $width, $height);
 	}
 }
 
@@ -797,14 +796,24 @@ function create_initial_parameters() {
 /**
  * Create the The iframe HTML Tag according to the given paramters
  */
-function vcita_create_embed_code($type, $uid, $width, $height, $theme = 'blue') {
-
+function vcita_create_embed_code($type, $uid, $width, $height) {
+    
     // Only present if UID is available 
-    if (isset($uid) && !empty($uid)) {
-        $code = "<iframe frameborder='0' src='http://".VCITA_SERVER_BASE."/" . urlencode($uid) . "/" . $type . "/?ref=".VCITA_WIDGET_API_KEY."&theme=".$theme.
-        "' width='".$width."' height='".$height."'></iframe>";
+    if (isset($uid) && !empty($uid)) {        
+		// Load embed code from the cache if possible
+		if ( false === ( $code = get_transient( 'embed_code' . $type . $uid . $width . $height) ) ) {
+			extract(vcita_get_contents("http://".VCITA_SERVER_BASE."/api/experts/" . urlencode($uid) . "/embed_code?type=" . $type . "&width=" . urlencode($width) . "&height=" . urlencode($height)));
+			$data = json_decode($raw_data);
+			if ($success) {
+				$code = $data->{'code'};			
+				// Set the embed code to be cached for an hour
+				set_transient( 'embed_code' . $type . $uid . $width . $height, $code, 3600);
+			}
+			else {
+				$code = "<iframe frameborder='0' src='http://".VCITA_SERVER_BASE."/" . urlencode($uid) . "/" . $type . "/' width='".$width."' height='".$height."'></iframe>";
+			}
+		}
     }
-
 	return $code;
 }
 
