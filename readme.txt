@@ -1,7 +1,7 @@
 ﻿=== Meeting Scheduler by vCita ===
 Contributors: vCita.com
 Donate link: 
-Tags: Appointment Scheduler, book meetings, book appointment, meet clients, meeting scheduler, online meeting, scheduling, vcita, video meeting
+Tags: Appointment Scheduler, book meetings, book appointment, meet clients, meeting scheduler, online meeting, scheduling, vcita, video meeting, online scheduling
 Requires at least: 2.8
 Tested up to: 3.3.2
 Stable tag: trunk
@@ -10,7 +10,7 @@ vCita meeting scheduler allows website visitors to book online, phone or face-to
  
 == Description ==
 
-vCita meeting scheduler allows website visitors to choose how they want to meet you:  face to face meeting, scheduled phone conversation or a advanced online video chat.
+vCita meeting scheduler allows website visitors to choose how they want to meet you:  in person, scheduled phone conversation or a advanced online video chat.
 <BR>
 vCita can also actively engage visitors after spending some time on your website which has proven to double meeting requests and contact requests triggered by potential clients. 
 <BR>
@@ -49,7 +49,7 @@ Get vCita next generation Meeting Scheduler today! It's FREE!!
 = Web Designer or Web Programmer? = 
 We have a partnership plan where you can make profit for every client that ends up using our product. Contact us at web-affiliate@vcita.com to get started. 
  
-To learn more about vCita, <a href="http://www.vcita.com/?invite=WP">visit www.vcita.com</a>.
+To learn more, <a href="http://www.vcita.com/?invite=wp-v-schd">visit vCita</a>.
 
 == Installation ==
  
@@ -62,7 +62,6 @@ To learn more about vCita, <a href="http://www.vcita.com/?invite=WP">visit www.v
 3.	After installation has finished, click "Activate".
 4.	Click the "Plugins" menu on the left and choose "vCita Meeting Scheduler".
 5.	Enter your e-mail address, first and last name and click "Save Settings".
-6.	Follow instructions sent to you by email from vCita.com to complete configuration.
 
 For manual installation instructions and additional widgets - look at the FAQ section
 
@@ -90,7 +89,7 @@ Do not use the vCita widget.
 = I want to create my own widget format (colors, buttons etc) =
 You can create your own buttons to better match your site colors or style.<br>
 All you need is to maintain links for "Send a Message" and "Set a Meeting".<br>
-Those links can be found at your vCita dashboard under <a href="http://www.vcita.com/get_widget">Get Widget</a> <br>
+Those links can be found at your vCita dashboard under <a href="http://www.vcita.com/get_widget?invite=wp-v-schd">Get Widget</a> <br>
 <br>
 
 
@@ -117,15 +116,15 @@ Now visitors can send a message or set a meeting with each of the users listed.<
 Each user will get an email to confirm his email address and upload an image to complete his profile.<br>
 
 <br>
-For other FAQ about vCita web-service please refer to <a href="http://www.vcita.com/about/faq">vCita FAQ</a>
+For other FAQ about vCita web-service please refer to <a href="http://www.vcita.com/about/faq?invite=wp-v-schd">vCita FAQ</a>
 <br>
 
 = What are vCita Terms and Conditions? =
-Please visit <a href="http://www.vcita.com/about/terms_of_service">Terms and Conditions</a>
+Please visit <a href="http://www.vcita.com/about/terms_of_service?invite=wp-v-schd">Terms and Conditions</a>
 <br>
 
 = What is vCita Privacy Policy? =
-Please visit <a href="http://www.vcita.com/about/privacy_policy">Privacy Policy</a>
+Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd">Privacy Policy</a>
 <br>
 
 == Screenshots ==
@@ -138,15 +137,15 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy">Privacy Policy<
 
 
 == Changelog == 
- = Version 2.1.0 (7 Aug 2012) = 
-  * Improvements in the embed code flow
+ = vCita Meeting Scheduler Version 2.1.0 (7 Aug 2012) = 
+  * Embed code is now dynamically created
  
- = Version 2.0.0 (8 May 2012) = 
+ = vCita Meeting Scheduler Version 2.0.0 (8 May 2012) = 
   * Settings page now directs to vCita site for much more customization options
   * Redesign of the settings page to be simplier and contain more relevant information
   * Changed to use the new API 
   * Fixed all warnings for referencing undefined array indices 
   * Updated FAQs
  
- = Version 1.0.0 (12 Feb 2012) = 
+ = vCita Meeting Scheduler Version 1.0.0 (12 Feb 2012) = 
   * Initial Version
