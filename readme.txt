@@ -1,8 +1,7 @@
 ﻿=== Meeting Scheduler by vCita ===
 Contributors: vCita.com
 Donate link: 
-Tags: calendar, appointment, appointments, booking, book, follow up, appointment booking, Appointment Scheduler, Class scheduling, Event Booking, event scheduling, online scheduling, plugin, scheduling, widget, hair, health, massage, nails, online appointment book, online scheduling,spa, wellness, Accept appointments online, Appointment Scheduler, Booking, Booking calendar, Class Booking, Salon Scheduling, scheduling, SPA scheduling,appointment, appointments, bookings, calendar, payments, paypal, reservations,appointments, calendar, diary, online, salon, schedule, scheduling, software, appointment, appointment scheduling, availability, availability calendar, booking form, calendar, event calendar, events, online reservation, Reservation, reservation plugin, schedule, scheduler, scheduling, booked, dates, scheduled
-
+Tags: Appointment Scheduler, scheduler, appointments, book meetings, book appointment, meet clients, meeting scheduler, online meeting, scheduling, vcita, video meeting, online scheduling, calendar, booking, payment, paypal, availability
 Requires at least: 2.8
 Tested up to: 3.4.2
 Stable tag: trunk
@@ -106,6 +105,9 @@ vCita has an **affiliate program** for you. Visit <a href="http://www.vcita.com/
 <BR>
  
 To learn more about vCita meeting and appointment scheduler and other features <a href="http://www.vcita.com/?invite=wp-v-schd">visit vCita</a>.
+
+Keywords: calendar, appointment, appointments, book, follow up, appointment booking, Event Booking, event scheduling, online appointment book, online scheduling, Accept appointments online, Booking, Booking calendar, appointment, appointments, bookings, calendar, payments, paypal, reservations,appointments, calendar, diary, online,  appointment, appointment scheduling, availability calendar, booking form, calendar, event calendar, events, online reservation, Reservation, reservation plugin, schedule, scheduler, scheduling, booked, dates, scheduled
+
 
 == Installation ==
  
