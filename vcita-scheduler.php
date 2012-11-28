@@ -3,7 +3,7 @@
 Plugin Name: Meeting Scheduler by vCita
 Plugin URI: http://www.vcita.com
 Description: vCita meeting scheduler allows website visitors to book online, phone or face-to-face meetings. It also provides a platform for Collecting Payment
-Version: 2.1.0
+Version: 2.1.1
 Author: vCita.com
 Author URI: http://www.vcita.com
 */
@@ -15,7 +15,7 @@ if (vcita_next_gen_check_plugin_available('vcita_widget') || vcita_next_gen_chec
 	add_action('admin_notices', 'vcita_next_gen_installed_warning');
 } else {
 	define('VCITA_SERVER_BASE', "www.vcita.com"); /* Don't include the protocol, added dynamically */
-	define('VCITA_WIDGET_VERSION', '2.1.0');
+	define('VCITA_WIDGET_VERSION', '2.1.1');
 	define('VCITA_WIDGET_PLUGIN_NAME', 'Meeting Scheduler by vCita');
 	define('VCITA_WIDGET_KEY', 'vcita_scheduler');
 	define('VCITA_WIDGET_API_KEY', 'wp-v-schd');
