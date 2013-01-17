@@ -1,26 +1,25 @@
-﻿=== Meeting Scheduler by vCita ===
+=== Meeting Scheduler by vCita ===
 Contributors: vCita.com
 Donate link: 
-Tags: Appointment Scheduler, scheduler, appointments, book meetings, book appointment, meet clients, meeting scheduler, online meeting, scheduling, vcita, video meeting, online scheduling, calendar, booking, payment, paypal, availability
+Tags: Appointment Scheduler, book meetings, book appointment, meet clients, meeting scheduler, online meeting, scheduling, vcita, video meeting, online scheduling
 Requires at least: 2.8
-Tested up to: 3.4.2
+Tested up to: 3.3.2
 Stable tag: trunk
  
-
-Offer your website visitors a simple scheduling experience directly from your WordPress site!
-
+vCita meeting scheduler allows website visitors to book online, phone or face-to-face meetings. It also provides a platform for Collecting Payment
  
 == Description ==
 
-vCita appointment and Meeting Scheduler WordPress plugin offers a simple scheduling experience for your website visitors, contacts and clients. 
+vCita meeting scheduler allows website visitors to choose how they want to meet you:  in person, scheduled phone conversation or a advanced online video chat.
 <BR>
-It is a powerful, customized tool that adapts itself to your staff's calendars and makes your business more effective.
+vCita can also actively engage visitors after spending some time on your website which has proven to double meeting requests and contact requests triggered by potential clients. 
 <BR>
-By actively approaching website visitors with an invitation to contact you and book a meeting or an appointment, vCita have proved to **double the number of leads through your website!**<BR>
+Choose one of our attractive, customizable and easy to set up widgets and give your online visitors the best scheduling experience exists online.  Add it to your website now for FREE!
 
-Choose one of our attractive, customizable and easy to set up widgets and give your online visitors the best scheduling experience exists online.  **Add it to your website now for FREE!**<BR>
+<BR>
+<a href="http://downloads.wordpress.org/plugin/meeting-scheduler-by-vcita.zip">Download Wordpress plugin vCita Meeting Scheduler Version</a>
 
-<a href="http://downloads.wordpress.org/plugin/meeting-scheduler-by-vcita.zip">Download Wordpress  vCita Meeting Scheduler plugin</a>
+vCita Meeting Scheduler Exclusive Features:
 
 = vCita Meeting and appointment Scheduler Key Features: =
 
@@ -86,15 +85,11 @@ Choose one of our attractive, customizable and easy to set up widgets and give y
  * ...and many more features!
 
 = Next Generation Meeting Scheduler = 
-Add an active meeting scheduler, which invite visitors all across your website to book meetings in any manner you choose.<BR>
-Combine your meeting scheduler with a contact form and use several different widgets to convert your website visitors to potential clients! <BR>
-vCita next generation booking calendar holds a variety of styles for different locations on your website.
+vCita next generation booking calendar holds a variety of styles for different locations on your website. 
 <BR>
-Get vCita next generation Meeting Scheduler today! **It's FREE**!!
+Whether it's for face to face meetings, Phone conversations or if you want to provide your services over online video chat meeting. 
 <BR>
-<BR>
-"vCita not only allows my patients to view my schedule and book appointments online 24/7, but even more importantly it allows referring physicians and surgeons to book their patients into my schedule before leaving their office.  Once an appointment is booked, we're able to contact them within seconds and engage in an online dialogue that is a huge convenience to them.  The best practice tool I've used in 25 years of practice." <BR>
-Terry Kane, Orthopaedic Physical Therapist<BR>
+vCita active meeting scheduler invite visitors all across your website to book meetings in any manner you choose.
 
 
 
@@ -103,8 +98,12 @@ Are you a web designer, a web developer, a marketing consultant, have many follo
 vCita has an **affiliate program** for you. Visit <a href="http://www.vcita.com/about/affiliates?invite=wp-v-schd">vCita affiliate page</a>
 
 <BR>
+Get vCita next generation Meeting Scheduler today! It's FREE!!
+
+= Web Designer or Web Programmer? = 
+We have a partnership plan where you can make profit for every client that ends up using our product. Contact us at web-affiliate@vcita.com to get started. 
  
-To learn more about vCita meeting and appointment scheduler and other features <a href="http://www.vcita.com/?invite=wp-v-schd">visit vCita</a>.
+To learn more, <a href="http://www.vcita.com/?invite=wp-v-schd">visit vCita</a>.
 
 Keywords: calendar, appointment, appointments, book, follow up, appointment booking, Event Booking, event scheduling, online appointment book, online scheduling, Accept appointments online, Booking, Booking calendar, appointment, appointments, bookings, calendar, payments, paypal, reservations,appointments, calendar, diary, online,  appointment, appointment scheduling, availability calendar, booking form, calendar, event calendar, events, online reservation, Reservation, reservation plugin, schedule, scheduler, scheduling, booked, dates, scheduled
 
@@ -127,8 +126,9 @@ For manual installation instructions and additional widgets - look at the FAQ se
 
 = How do I set my availability for meetings, hourly rate and other preferences? =
 Once you enter your email, you will receive an email from vCita to complete your registration.<br>
-You will then have the option to customize your widget, add your photo, set meeting and appointments preferences, calendar and scheduling options.<br>
+You will then have the option to customize your widget, add your photo, set meeting preferences and schedule.<br>
 Once you are logged in to vCita, you can always change your settings from the Wordpress plugin settings page.<br>
+<br>
 
 = Can I sync my existing calendar with vCita? =
 Of course you can sync your calendar! <BR>
@@ -157,8 +157,8 @@ To have a widget that only contains buttons (no image or profile text) use the f
 [vCitaMeetingScheduler type=widget height=110]<br>
 <br>
 NOTE: if you are integrating the widget as a sidebar, you should use the "Text" widget and put use codes above.
-Do not use the vCita widget. <br>
-
+Do not use the vCita widget.
+<br>
 
 = I want to create my own widget format (colors, buttons etc) =
 You can create your own buttons to better match your site colors or style.<br>
@@ -203,13 +203,11 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
 
 == Screenshots ==
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
+1. **Active Contact Form** - Actively invite your site visitors
+1. **Active Contact Form** - floating mode after closed by the visitor
+1. **vCita Scheduler Experience** - Your schedule is displayed when a visitor clicks 'Set a Meeting'
+1. **Management Platform** - Monitor traffic and manage your contacts, messages and meeting requests
+1. **vCita Web-Based Meeting Room** - You can meet with vCita Video Meeting or Phone Conference
 
 == Changelog == 
  = vCita Meeting Scheduler Version 2.1.1 (28 Nov 2012) =
@@ -219,6 +217,13 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
  * Branding options to the Scheduling process
  * Reschedule options
 
+== Changelog == 
+ = vCita Meeting Scheduler Version 3.0 = 
+	 * A new plugin management screen
+	 * All widgets editing can now be done directly from Wordpress
+	 * Fix to Contact Sidebar disconnecion issue
+	 * New color themes options 
+ 
  = vCita Meeting Scheduler Version 2.1.0 (7 Aug 2012) = 
   * Embed code is now dynamically created
  
