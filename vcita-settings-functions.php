@@ -446,7 +446,7 @@ function vcita_widget_admin() {
     ?>
     <script type="text/javascript">
 		jQuery(function ($) {	
-		    $('.start-login')
+		     $('.start-login')
 		    	.on('click', function(){
 		        	var callbackURL = "<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page='.VCITA_WIDGET_UNIQUE_ID.'/vcita-callback.php' ?>";
 					var email = "";
