@@ -11,7 +11,7 @@ Author URI: http://www.vcita.com
 /* --- Static initializer for Wordpress hooks --- */
 
 // Check if vCita plugin already installed.
-if (vcita_contact_check_plugin_available('vcita_widget') || vcita_contact_check_plugin_available('vcita_support')) {
+if (vcita_scheduler_check_plugin_available('vcita_widget') || vcita_scheduler_check_plugin_available('vcita_support')) {
 	add_action('admin_notices', 'vcita_scheduler_other_plugin_installed_warning');
 } else {
 	define('VCITA_SERVER_BASE', "www.vcita.com"); /* Don't include the protocol, added dynamically */
@@ -53,7 +53,7 @@ function vcita_scheduler_other_plugin_installed_warning() {
 /**
  * Check if the requested plugin is already available
  */
-function vcita_contact_check_plugin_available($plugin_key) {
+function vcita_scheduler_check_plugin_available($plugin_key) {
 	$other_widget_parms = (array) get_option($plugin_key); // Check the key of the other plugin
 
 	// Check if vCita plugin already installed.
