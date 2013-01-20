@@ -14,10 +14,18 @@ function vcita_init() {
 	wp_register_widget_control('vcita_widget_id', 'vCita Sidebar Widget', 'vcita_widget_admin');
 	add_filter('plugin_action_links', 'vcita_add_settings_link', 10, 2 );
 	
-	wp_enqueue_script('jquery');
+
 	
 	register_uninstall_hook(VCITA_WIDGET_UNIQUE_LOCATION, 'vcita_uninstall');
 	
+}
+
+/**
+ * Add jqeury to vcita plugin
+ */
+function vcita_jqeury_enqueue()
+{
+ 	wp_enqueue_script('jquery');
 }
 
 /**

@@ -39,6 +39,7 @@ if (vcita_scheduler_check_plugin_available('vcita_widget') || vcita_scheduler_ch
 	add_shortcode(VCITA_WIDGET_SHORTCODE,'vcita_add_contact');
 	add_action('admin_menu', 'vcita_admin_actions');
 	add_action('wp_head', 'vcita_add_active_engage');
+	add_action('wp_enqueue_scripts', 'vcita_jqeury_enqueue');
  	// AJAX preperation
 	wp_localize_script( 'vcita_ajax_request', 'vcitaAjax', array( 'ajaxurl' => admin_url( 'vcita-ajax.php' ) ) );
 }
