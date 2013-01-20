@@ -3,7 +3,7 @@ Contributors: vCita.com
 Donate link: 
 Tags: Appointment Scheduler, book meetings, book appointment, meet clients, meeting scheduler, online meeting, scheduling, vcita, video meeting, online scheduling
 Requires at least: 2.8
-Tested up to: 3.3.2
+Tested up to: 3.5
 Stable tag: trunk
  
 vCita meeting scheduler allows website visitors to book online, phone or face-to-face meetings. It also provides a platform for Collecting Payment
