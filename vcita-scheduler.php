@@ -3,7 +3,7 @@
 Plugin Name: Meeting Scheduler by vCita
 Plugin URI: http://www.vcita.com
 Description: Meeting Scheduler by vCita proves to increase the number of contact form requests 
-Version: 3.0.1
+Version: 3.0.2
 Author: vCita.com
 Author URI: http://www.vcita.com
 */
@@ -12,10 +12,10 @@ Author URI: http://www.vcita.com
 
 // Check if vCita plugin already installed.
 if (vcita_contact_check_plugin_available('vcita_widget') || vcita_contact_check_plugin_available('vcita_support')) {
-	add_action('admin_notices', 'vcita_contact_other_plugin_installed_warning');
+	add_action('admin_notices', 'vcita_scheduler_other_plugin_installed_warning');
 } else {
 	define('VCITA_SERVER_BASE', "www.vcita.com"); /* Don't include the protocol, added dynamically */
-	define('VCITA_WIDGET_VERSION', '3.0.1');
+	define('VCITA_WIDGET_VERSION', '3.0.2');
 	define('VCITA_WIDGET_PLUGIN_NAME', 'Meeting Scheduler by vCita');
 	define('VCITA_WIDGET_KEY', 'vcita_scheduler');
 	define('VCITA_WIDGET_API_KEY', 'wp-v-schd');
@@ -46,8 +46,8 @@ if (vcita_contact_check_plugin_available('vcita_widget') || vcita_contact_check_
 /** 
  * Notify about other vCita plugin already available
  */ 
-function vcita_contact_other_plugin_installed_warning() {
-	echo "<div id='vcita-warning' class='error'><p><B>".__("vCita Plugin is already installed")."</B>".__(', please remove "<B>Meeting Scheduler by vCita</B>" and use the available "<B>Meeting Scheduler by vCita</B>" plugin')."</p></div>";
+function vcita_scheduler_other_plugin_installed_warning() {
+	echo "<div id='vcita-warning' class='error'><p><B>".__("vCita Plugin is already installed")."</B>".__(', please remove "<B>Meeting Scheduler by vCita</B>" and use the available "<B>Contact Form by vCita</B>" plugin')."</p></div>";
 }
 
 /**
