@@ -8,6 +8,7 @@
 		Edit vCita Proactive Contact Form
 		<div class="small-text">Gain More Clients from Your Website!</div>
 	</div>
+	<a class="left faq" href="http://support.vcita.com/forums/21650943-wordpress" target="_blank">Add Active Engage on specific pages</a>
 	<a class="right done-editing" href="<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page=' . VCITA_WIDGET_UNIQUE_ID . '/vcita-settings-functions.php' ?>">Done</a>
 	<a class="right back-to-main" href="<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page=' . VCITA_WIDGET_UNIQUE_ID . '/vcita-settings-functions.php' ?>">Back to main page</a>
 	<div class="clear"></div>

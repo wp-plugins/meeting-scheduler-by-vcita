@@ -146,6 +146,8 @@ function vcita_admin_actions() {
 
 						contentHolder.css({ 'margin-top' : marginTop });
 				    	$('#floating').addClass('visible');
+				    	$('#floating-holder').css({'opacity':1});
+				    	$('#content-holder').css({'display':'block'});
 				    }
 		        };
 		        
@@ -153,7 +155,9 @@ function vcita_admin_actions() {
 		        	$('#content').html(" ");  
 				    	
 			        $('#floating').removeClass('visible');
-		        };		         
+			        $('#floating-holder').css({'opacity':0});
+			        $('#content-holder').css({'display':'none'});
+		        };		         		         
 
 		        $('#start-login')
 		        	.click(function(){
@@ -166,7 +170,34 @@ function vcita_admin_actions() {
 			        	var new_location = "http://" + "<?php echo VCITA_LOGIN_PATH.'?callback=' ?>" + encodeURIComponent(callbackURL) + "&invite="+"<?php echo VCITA_WIDGET_INVITE_CODE ?>"+"&lang="+"<?php echo get_locale() ?>"+"&email=" + email; 
 			        	window.location = new_location;
 		        	});
-					
+				
+				$('#switch-email')
+		        	.click(function(){
+	        			var callbackURL = "<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page='.VCITA_WIDGET_UNIQUE_ID.'/vcita-callback.php' ?>";
+			        	var new_location = "http://" + "<?php echo VCITA_CHANGE_EMAIL_PATH.'?callback=' ?>" + encodeURIComponent(callbackURL) + "&invite="+"<?php echo VCITA_WIDGET_INVITE_CODE ?>"+"&lang="+"<?php echo get_locale() ?>"; 
+			        	window.location = new_location;
+	 	        	});			
+
+	        	$('#scheduling-settings')
+	        		.click(function(){
+	        			var callbackURL = "<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page='.VCITA_WIDGET_UNIQUE_ID.'/vcita-callback.php' ?>";
+			        	var new_location = "http://" + "<?php echo VCITA_SCHEDULING_PATH.'?callback=' ?>" + encodeURIComponent(callbackURL) + "&invite="+"<?php echo VCITA_WIDGET_INVITE_CODE ?>"+"&lang="+"<?php echo get_locale() ?>"; 
+			        	window.open(new_location);
+	        		});
+
+	        	$('#test-drive')
+	        		.click(function(){
+    					var callbackURL = "<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page='.VCITA_WIDGET_UNIQUE_ID.'/vcita-callback.php' ?>";
+    					if ($(this).data().demo) {
+							var new_location = "http://" + "<?php echo VCITA_SCHEDULING_TEST_DRIVE_DEMO_PATH.'?callback=' ?>" + encodeURIComponent(callbackURL) + "&invite="+"<?php echo VCITA_WIDGET_INVITE_CODE ?>"+"&lang="+"<?php echo get_locale() ?>"; 
+						}
+        				else {
+				        	var new_location = "http://" + "<?php echo VCITA_SCHEDULING_TEST_DRIVE_PATH.'?callback=' ?>" + encodeURIComponent(callbackURL) + "&invite="+"<?php echo VCITA_WIDGET_INVITE_CODE ?>"+"&lang="+"<?php echo get_locale() ?>"; 
+			        	}
+
+			        	window.open(new_location, '', 'height=740, width=1024');
+	        		});
+
 		        $('#switch-account')
 		        	.click(function(){
 			        	var callbackURL = "<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page='.VCITA_WIDGET_UNIQUE_ID.'/vcita-callback.php' ?>";
@@ -220,7 +251,12 @@ function vcita_admin_actions() {
 					 	showContent($('#vcita-video').html());    
 					 	return false;
 				 	});
-					 	
+				
+				$('#play-vcita-video2')
+				 	.click(function(){
+					 	showContent($('#vcita-video2').html());    
+					 	return false;
+				 	});					 	
 				 	
 			<?php 
 				if (vcita_is_demo_user()) { ?>
@@ -243,8 +279,9 @@ function vcita_admin_actions() {
 		</script>
 		<div class="vcita-wrap" dir="ltr">
 			<div id="vcita-head">
-	    		Welcome to vCita’s Contact Experience
-	    		<div class="small-text">Gain More Clients from Your Website!</div>
+	    		Welcome to Online Scheduling!
+	    		<br>
+	    		<a href="javascript:void(0);" class="watch-video" id="play-vcita-video2">Watch Video</a>
 	    	</div>
 			<?php echo vcita_create_user_message($vcita_widget, $update_made); ?>
 			<?php if ($vcita_dismissed) { ?>
@@ -252,19 +289,36 @@ function vcita_admin_actions() {
 			<?php } ?>
 	    	<div class="section">
 	    	<?php if($first_time) {?>
-	    		<h3>Contact requests will be sent to this email:</h3>
-	    		<input id="vcita-email" type="text" value="" class="watermark" data-watermark="Enter Your Email"/>
-	    		<a href="javascript:void(0)" class="gray-button-style account" id="start-login"><span></span>OK</a>	    	    			
+	    		<h3>Settings</h3>
+	    		<div class="left appointments_holder">
+		    		<div class="title">Appointment requests will be sent to this email:</div>
+		    		<input id="vcita-email" type="text" value="" class="watermark" data-watermark="Enter Your Email"/>
+		    		<a href="javascript:void(0)" class="gray-button-style account" id="start-login"><span></span>OK</a>	    	    
+	    		</div>
+				<div class="left">			
+					<div class="title">Scheduling settings:</div>
+	    			<a href="javascript:void(0);" id="test-drive" data-demo="true">See online scheduling demo</a>
+    			</div>
+    			<div class="clear"></div>
 	    	<?php } 
 	    		else { ?>
-	    		<h3>Contact requests will be sent to this email:</h3>
-	    		<label class="checked" for="user-email"></label>
-	    		<input id="vcita-email" type="text" disabled="disabled" value="<?php echo($vcita_widget["email"]) ?>"/>
-	    		<a href="javascript:void(0)" class="gray-button-style account" id="switch-account" ><span></span>Change Email</a>
+	    		<h3>Settings</h3>
+	    		<div class="left appointments_holder">
+	    			<div class="title">Appointment requests will be sent to this email:</div>
+		    		<label class="checked" for="user-email"></label>
+		    		<input id="vcita-email" type="text" disabled="disabled" value="<?php echo($vcita_widget["email"]) ?>"/>
+		    		<a href="javascript:void(0)" class="gray-button-style account" id="switch-email" ><span></span>Profile Settings</a>
+				</div>
+				<div class="left">
+					<div class="title">Scheduling settings:</div>
+	    			<a class="gray-button-style scheduling" id="scheduling-settings" href="javascript:void(0);"><span></span>Go to settings</a>
+	    			<a href="javascript:void(0);" id="test-drive">Test drive your online scheduling</a>
+    			</div>
+    			<div class="clear"></div>
 	    	<?php } ?>
 	    	</div>
 	    	<div class="section widgets-holder">
-	    		<h3>How would you like to add vCita to your website?</h3>
+	    		<h3>How would you like to add scheduling to your website?</h3>
 	    		<div class="widgets-management">
 	    			<div class="widgets-management-head">
 	    				<div class="left type">Type</div>
@@ -377,7 +431,7 @@ function vcita_admin_actions() {
 				</div>
 	    	</div>
 	    	<div class="links-holder left">
-		    	<a class="with-icon scheduling" target="_blank" href="http://<?php echo VCITA_SERVER_BASE ?>/settings?section=services&invite=<?php echo VCITA_WIDGET_INVITE_CODE ?>&confirmation_token=<?php echo $vcita_widget['confirmation_token'] ?>">Scheduling Options</a>
+		    	<a id="switch-account" target="_blank" href="javascript:void(0);">Switch to a different vCita account</a>
 	    	</div>
 	    	<div class="shortcode-holder right">
 	    		To change widgets size: <a class="shortcode gray-button-style edit"><span></span>Grab Shortcodes</a>
@@ -398,9 +452,11 @@ function vcita_admin_actions() {
 	    </div>
 	    
 	    <div id="floating">
-	    	<div id="content-holder">
-	    		<a id="close-floating"></a>
-		    	<div id="content">
+	    	<div id="floating-holder">
+		    	<div id="content-holder">
+		    		<a id="close-floating"></a>
+			    	<div id="content">
+			    	</div>
 		    	</div>
 	    	</div>
 	    </div>
@@ -430,6 +486,10 @@ function vcita_admin_actions() {
 			<iframe allowfullscreen="true" type="text/html" frameborder="0" height="363" src="http://www.youtube.com/embed/rv-O7gxwLbk" width="600" />
 		</script>
 		
+		<script type="text/html" id="vcita-video2">
+			<iframe allowfullscreen="true" type="text/html" frameborder="0" height="363" src="http://www.youtube.com/embed/zcPpfiwE41Q" width="600" />
+		</script>
+
 		<script type="text/html" id="settings-iframe">
 			<iframe src="http://<?php echo VCITA_SERVER_BASE ?>/integrations/wordpress/settings" class="hidden" width="0" height="0"/>
 		</script>

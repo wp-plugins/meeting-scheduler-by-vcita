@@ -27,13 +27,13 @@ a:active {
 #vcita-head {
 	background: url("images/header.jpg") no-repeat 0px 0px;
 	height: 96px;
-	width: 689px;
+	width: 629px;
 	margin: 0 auto 5px;
-	text-align: center;
-	font-size: 30px;
+	text-align: left;
+	font-size: 26px;
 	color: white;
 	line-height: 30px;
-	padding: 35px 0 0 262px;
+	padding: 35px 0 0 322px;
 }
 
 #vcita-head .small-text{
@@ -50,6 +50,32 @@ a:active {
 	font-size: 20px;
 }
 
+.title {
+	margin-bottom: 5px;
+}
+
+.appointments_holder {
+	border-right: 1px solid #D2E0F0;
+	margin-right: 24px;
+	padding-right: 20px;
+}
+
+.watch-video {
+  background: url("images/play_icn.png") 0px 0px no-repeat;
+  height: 56px;
+  line-height: 56px;
+  padding-left: 46px;
+  margin-left: 96px;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.watch-video:hover {
+	color: white;
+}
+
 .checked {
 	background: url("images/v.png") no-repeat 0px 50%;
 	width: 16px;
@@ -61,7 +87,7 @@ input[type="text"] {
 	border: 1px solid #CECECE;
 	height: 28px;
 	line-height: 28px;
-	width: 268px;
+	width: 238px;
 	padding-left: 10px;
 	margin-right: 5px;
 }
@@ -100,6 +126,11 @@ input[type="text"][disabled="disabled"] {
 	background-color: #D2DEDF;
 }
 
+.gray-button-style.disabled {
+	cursor: default;
+	background: rgb(221, 221, 221);
+}
+
 a.gray-button-style span {
 	display: inline-block;
 	line-height: 22px;
@@ -131,6 +162,14 @@ a.gray-button-style.account span {
 
 a.gray-button-style.instructions span {
 	background-image: url("images/inst.png");
+}
+
+a.gray-button-style.scheduling span {
+	background-image: url("images/clock.png");
+}
+
+a.gray-button-style.scheduling {
+
 }
 
 .widgets-management {
@@ -509,6 +548,7 @@ a.with-icon.scheduling {
 }
 
 #floating #content-holder {
+	display: none;
 	background: white;
 	position: relative;
 	margin: 150px auto 0;
@@ -530,6 +570,13 @@ a.with-icon.scheduling {
 	width: 35px;
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+#floating-holder {
+	position: fixed;
+	opacity: 0;
+	height: 0;
+	width: 100%;
 }
 
 #floating #content-holder #close-floating:hover {
@@ -560,8 +607,12 @@ a.with-icon.scheduling {
 	height: 200px;
 }
 
-links-holder {
+.links-holder {
 	width: 450px;
+}
+
+.links-holder #switch-account {
+	margin-left: 15px;
 }
 
 .shortcode-holder {
@@ -577,8 +628,16 @@ links-holder {
 
 .back-to-main {
 	background-image: url("images/back.png");
-	background-repeat: no-repeat;
 	margin: 0 20px 10px 0px;
+}
+
+.faq {
+	background-image: url("images/q.png");
+	margin-left: 9px;
+}
+
+.faq, .back-to-main {
+	background-repeat: no-repeat;
 	background-position: left center;
 	padding-left: 27px;
 	line-height: 27px;
@@ -641,4 +700,12 @@ input.vcita-watermark {
 
 #iframe-holder iframe {
 	overflow: hidden;
+}
+
+#test-drive {
+	background-image: url("images/arrow.png");
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	line-height: 31px;
 }
