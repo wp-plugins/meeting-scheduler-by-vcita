@@ -10,10 +10,10 @@ Online scheduling plugin for WordPress website let leads and clients easily sche
  
 == Description ==
 
-vCita’s Online Scheduling WordPress plugin offers a self-service appointment scheduling experience for your contacts and clients. <BR><BR>
+vCita's Online Scheduling WordPress plugin offers a self-service appointment scheduling experience for your contacts and clients. <BR><BR>
 = We are proud to offer the easiest appointment booking for WordPress plugin for you and for your website visitors: =
  
- * vCita’s Online Scheduling WordPress plugin displays your up-to-date availability on your website, based on your existing calendar, so your staff can save time on client scheduling. 
+ * vCita's Online Scheduling WordPress plugin displays your up-to-date availability on your website, based on your existing calendar, so your staff can save time on client scheduling. 
  * You can predefine a variety of services or appointments your clients may request: a phone call, an appointment at your office, a class, a service at any location or even a video meeting
  * Your client will instantly receive a customized email message when submitting an online scheduling request. 
  * The appointment will be added to your calendar and your client will receive an email notification with the appointment details (time, location or phone number), as well as an additional reminder before the meeting
@@ -33,7 +33,7 @@ http://www.youtube.com/watch?v=zcPpfiwE41Q
 
 
  * **Hassle-free Scheduling Everywhere** - Add an appointment booking and online scheduling option not only to your WordPress website, but also to your email signature, social networks and even directory listings and save time on client scheduling.
- * **Synchronize with Existing Calendars** - Display your up-to-date availability on your WordPress website or blog. Whether you are using Google Calendar, Outlook, Apple calendar, Hotmail, Yahoo or any other calendar. Our WordPress appointment booking plugin sync’s with any calendar.
+ * **Synchronize with Existing Calendars** - Display your up-to-date availability on your WordPress website or blog. Whether you are using Google Calendar, Outlook, Apple calendar, Hotmail, Yahoo or any other calendar. Our WordPress appointment booking plugin syncs with any calendar.
  * **Time-zone adjustment**- Your clients can always see your availability, adjusted to their time-zone, and pick the best time for them, when booking an appointment.
  * **Customize and Brand the client experience** - with your language, texts, and logo and theme colors. 
  * **Predefined Services and Meeting Options** - Predefine a variety of services or appointments your clients may request an intro call, phone consultation, phone conference, an in-office appointment, in-person service at another location, a video session, Skype meeting, Google hangout, or any other online meeting.
@@ -41,7 +41,7 @@ http://www.youtube.com/watch?v=zcPpfiwE41Q
 Configure up to two meeting reminders to both you and the client. 
  * **Reduce No Shows, Simplify Rescheduling** - Clients are reminded of their upcoming appointment. They can also easily reschedule by following the instructions on the email confirmation they received and simply choosing a new time on your calendar.
  * **Request payments for your time and service, and secure an online payment upfront** - You can request the client's credit-card or PayPal information and guarantee your fees when an appointment or a service is scheduled from our online scheduling for WordPress plugin.
- * **Manage Your Calendar on Any Device** - You and your staff can review, accept or reject meeting requests and appointments at the office or on the go on any mobile device. View your daily or monthly calendar, previous client requests and correspondence with vCita’s WordPress online scheduling software.
+ * **Manage Your Calendar on Any Device** - You and your staff can review, accept or reject meeting requests and appointments at the office or on the go on any mobile device. View your daily or monthly calendar, previous client requests and correspondence with vCita's WordPress online scheduling software.
 
 
 = Building WordPress sites for others? = 
