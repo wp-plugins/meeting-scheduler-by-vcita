@@ -201,7 +201,7 @@ function vcita_admin_actions() {
 		        $('#switch-account')
 		        	.click(function(){
 			        	var callbackURL = "<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page='.VCITA_WIDGET_UNIQUE_ID.'/vcita-callback.php' ?>";
-			        	var new_location = "http://" + "<?php echo VCITA_LOGIN_PATH.'?callback=' ?>" + encodeURIComponent(callbackURL) + "&invite="+"<?php echo VCITA_WIDGET_INVITE_CODE ?>"+"&lang="+"<?php echo get_locale() ?>"; 
+			        	var new_location = "http://" + "<?php echo VCITA_LOGIN_PATH.'?callback=' ?>" + encodeURIComponent(callbackURL) + "&invite="+"<?php echo VCITA_WIDGET_INVITE_CODE ?>"+"&lang="+"<?php echo get_locale() ?>"+"&login=true"; 
 			        	window.location = new_location;
 	 	        	});					
 				
@@ -221,6 +221,18 @@ function vcita_admin_actions() {
 				       window.open(link.attr('href'), '_blank', specs);
 				       e.preventDefault();
 				     });
+
+				  function popupCenter(url, width, height, name) {
+					  var left = (screen.width/2)-(width/2);
+					  var top = (screen.height/2)-(height/2);
+					  return window.open(url, name, "location=0,resizable=1,scrollbars=1,width="+width+",height="+height+",left="+left+",top="+top);
+					}
+
+					jQuery("a.show-in-popup").click(function(e ){
+					  popupCenter(jQuery(this).attr('href'), 1100, 650, jQuery(this).data().popup_window);
+					  e.stopPropagation();
+					  e.preventDefault();
+					});
 				     				     
 			    var handleWatermark = function(input){
 					if(input.val().trim() != "") {
@@ -245,19 +257,6 @@ function vcita_admin_actions() {
 				 	.blur(function(){
 				 		handleWatermark($(this));
 				 	});				
-				 
-				 $('#play-vcita-video')
-				 	.click(function(){
-					 	showContent($('#vcita-video').html());    
-					 	return false;
-				 	});
-				
-				$('#play-vcita-video2')
-				 	.click(function(){
-					 	showContent($('#vcita-video2').html());    
-					 	return false;
-				 	});					 	
-				 	
 			<?php 
 				if (vcita_is_demo_user()) { ?>
 				
@@ -281,7 +280,7 @@ function vcita_admin_actions() {
 			<div id="vcita-head">
 	    		Welcome to Online Scheduling!
 	    		<br>
-	    		<a href="javascript:void(0);" class="watch-video" id="play-vcita-video2">Watch Video</a>
+	    		<a href="http://www.vcita.com/education_center?item=3-1" class="watch-video show-in-popup" id="play-vcita-video2">Watch Video</a>
 	    	</div>
 			<?php echo vcita_create_user_message($vcita_widget, $update_made); ?>
 			<?php if ($vcita_dismissed) { ?>
@@ -441,7 +440,7 @@ function vcita_admin_actions() {
 	    		<a class="web-developers left" target="_blank" href="http://<?php echo VCITA_SERVER_BASE ?>/partners/web-professionals?invite=<?php echo VCITA_WIDGET_INVITE_CODE ?>"></a>
 	    		<div class="more-offers left">
 	    			<div class="green">vCita has a lot more to offer!</div>
-	    			Visit <a target="_blank" href="http://<?php echo VCITA_SERVER_BASE ?>?invite=<?php echo VCITA_WIDGET_INVITE_CODE ?>">vCita</a> or <a href="#" id="play-vcita-video">watch a video</a>
+	    			Visit <a target="_blank" href="http://<?php echo VCITA_SERVER_BASE ?>?invite=<?php echo VCITA_WIDGET_INVITE_CODE ?>">vCita</a> or <a href="http://www.vcita.com/education_center" id="not-play-vcita-video" class="show-in-popup">watch a video</a>
 	    			<br>
 	    			Any suggestions or questions? visit our <a target="_blank" href="http://support.vcita.com/forums">forum</a>
 	    		</div>
@@ -526,7 +525,7 @@ function vcita_widget_admin() {
 		    $('.switch-account')
 		    	.on('click', function(){
 		        	var callbackURL = "<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page='.VCITA_WIDGET_UNIQUE_ID.'/vcita-callback.php' ?>";
-		        	var new_location = "http://" + "<?php echo VCITA_LOGIN_PATH.'?callback=' ?>" + encodeURIComponent(callbackURL) + "&invite="+"<?php echo VCITA_WIDGET_INVITE_CODE ?>"+"&lang="+"<?php echo get_locale() ?>"; 
+		        	var new_location = "http://" + "<?php echo VCITA_LOGIN_PATH.'?callback=' ?>" + encodeURIComponent(callbackURL) + "&invite="+"<?php echo VCITA_WIDGET_INVITE_CODE ?>"+"&lang="+"<?php echo get_locale() ?>"+"&login=true"; 
 		        	window.location = new_location;
 	 	        });					
 	 	        	

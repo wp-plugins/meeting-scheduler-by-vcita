@@ -1,3 +1,6 @@
+#wpbody-content{
+  background: #fff;
+}
 a:active {
 	outline: none;
 }
@@ -14,10 +17,13 @@ a:active {
 }
 
 .vcita-wrap {
-	margin: 10px auto;
-	max-width: 951px;
-	background-color: #FAFBFC;
-	border: 1px solid #D2E0F0;
+margin: 10px auto;
+max-width: 951px;
+background-color: #FAFBFC;
+/*border: 1px solid #D2E0F0;*/
+-moz-box-shadow:    2px 2px 2px 2px rgba(196,196,196,0.8);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(196,196,196,0.8);
+    box-shadow:         2px 2px 2px 2px rgba(196,196,196,0.8);
 }
 
 .vcita-wrap.wide {
@@ -441,7 +447,7 @@ a.with-icon.scheduling {
     display: inline-block;
     margin: 0px 0px -8px;
 }
-.onoffswitch-checkbox {
+input.onoffswitch-checkbox {
     display: none;
 }
 .onoffswitch-label {
