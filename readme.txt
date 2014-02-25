@@ -32,7 +32,7 @@ http://www.youtube.com/watch?v=3M3Ju5Boejw
 
 
  * **Hassle-free Scheduling Everywhere** - Add an appointment booking and online scheduling option not only to your WordPress website, but also to your email signature, social networks and even directory listings and save time on client scheduling.
- * **Synchronize with Existing Calendars** - Display your up-to-date availability on your WordPress website or blog. Whether you are using Google Calendar, Outlook, Apple calendar, Hotmail, Yahoo or any other calendar. Our WordPress appointment booking plugin syncs with any calendar.
+ * **Synchronize with Existing Calendars** - Display your up-to-date availability on your WordPress website or blog. Whether you are using Google Calendar, Outlook, Apple calendar, Hotmail, Yahoo or any other calendar. Our WordPress <a href="http://www.vcita.com/software/online_scheduling?invite=WP-V-SCHD">appointment booking</a>plugin syncs with any calendar.
  * **Time-zone adjustment**- Your clients can always see your availability, adjusted to their time-zone, and pick the best time for them, when booking an appointment.
  * **Customize and Brand the client experience** - with your language, texts, and logo and theme colors. 
  * **Predefined Services and Meeting Options** - Predefine a variety of services or appointments your clients may request an intro call, phone consultation, phone conference, an in-office appointment, in-person service at another location, a video session, Skype meeting, Google hangout, or any other online meeting.
@@ -56,7 +56,7 @@ Use one of our free <a href="http://www.vcita.com?invite=WP-V-SCHD">Wordpress on
  * Specify a location for your appointments and meetings, call your clients or ask them to call you via phone or Skype.
  * Get booking notifications to your inbox and calendar at any mail service. 
  * **New** - Edit your clients details, add personal notes and more.
- * **New** - Send your clients a customized Invoice for your time or service.
+ * **New** - Send your clients a customized Invoice for your time or service - Try vCita <a href="http://www.vcita.com/invoice_template?invite=WP-V-SCHD">Invoice Template</a>
  * **New** - create your new customized Public Profile where your clients can easily get to know your offered services and book appointments.
  * Fully translated to Spanish
  * Your client will also receive an email invitation with the appointment details (time, location or phone number), as well as an additional reminder just before the appointment starts.
@@ -89,7 +89,7 @@ Use one of our free <a href="http://www.vcita.com?invite=WP-V-SCHD">Wordpress on
  * Send a Thank you note once the appointment ended, and offer your clients to set a follow-up booking.
  * ...and many more features!
 
-<a href="https://www.vcita.com/software/online_scheduling?invite=WP-V-SCHD">Learn more about  WordPress Appointment Booking and Online Scheduling Plugin by vCita</a>  
+Learn more about WordPress Appointment Booking and <a href="http://www.vcita.com/software/online_scheduling?invite=WP-V-SCHD">Online Scheduling Plugin</a> by vCita
 
 
 
