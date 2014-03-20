@@ -397,7 +397,7 @@ function make_sure_page_published($vcita_widget) {
 	$page = get_page($page_id);
 
 	if (empty($page)) {
-    $page = get_page_by_title('Contact');
+    $page = get_page_by_title('Contact Us');
     $page_id = $page->ID;
   }
 
@@ -449,7 +449,7 @@ function make_sure_calendar_page_published($vcita_widget) {
  */
 function is_page_available($vcita_widget) {
 	if (!isset($vcita_widget['page_id']) || empty($vcita_widget['page_id'])) {
-    $page = get_page_by_title('Contact');
+    $page = get_page_by_title('Contact Us');
     if(!empty($page) && $page->{"post_status"} == "publish"){
       return true;
     }
@@ -519,7 +519,7 @@ function vcita_trash_current_page($widget_params) {
 		}
 	}
   else {
-    $page = get_page_by_title('Contact');
+    $page = get_page_by_title('Contact Us');
     if(!empty($page) && $page->{"post_status"} == "publish"){
       wp_trash_post($page->ID);
     }
