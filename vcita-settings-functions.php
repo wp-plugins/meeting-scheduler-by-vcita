@@ -39,6 +39,7 @@ function vcita_admin_actions() {
 		add_submenu_page(__FILE__, __('Contact Form', VCITA_WIDGET_MENU_NAME), __('Contact Form', VCITA_WIDGET_MENU_NAME), 'edit_posts', VCITA_WIDGET_UNIQUE_ID.'/vcita-contact-form-edit.php');
 		add_submenu_page(__FILE__, __('Active Engage', VCITA_WIDGET_MENU_NAME), __('Active Engage', VCITA_WIDGET_MENU_NAME), 'edit_posts', VCITA_WIDGET_UNIQUE_ID.'/vcita-active-engage-edit.php');
 		add_submenu_page(__FILE__, __('Sidebar', VCITA_WIDGET_MENU_NAME), __('Sidebar', VCITA_WIDGET_MENU_NAME), 'edit_posts', VCITA_WIDGET_UNIQUE_ID.'/vcita-sidebar-edit.php');
+		add_submenu_page(__FILE__, __('Calendar', VCITA_WIDGET_MENU_NAME), __('Calendar', VCITA_WIDGET_MENU_NAME), 'edit_posts', VCITA_WIDGET_UNIQUE_ID.'/vcita-calendar-edit.php');
 	}
 	
 	add_submenu_page(null, __('', VCITA_WIDGET_MENU_NAME), __('', VCITA_WIDGET_MENU_NAME), 'edit_posts', VCITA_WIDGET_UNIQUE_ID.'/vcita-callback.php');
@@ -56,6 +57,7 @@ function vcita_admin_actions() {
 	if (isset($_POST) && isset($_POST['Submit']) && $_POST['Submit'] == 'Disconnect') {
 		$vcita_widget = (array) get_option(VCITA_WIDGET_KEY);
 		vcita_trash_current_page($vcita_widget);
+		vcita_trash_current_calendar_page($vcita_widget);
 		
 		$vcita_widget = create_initial_parameters();
 		$vcita_widget["dismiss"] = "true"; // Make sure the notification won't appear 
@@ -68,13 +70,16 @@ function vcita_admin_actions() {
 	if ($update_made) {
 		if ($_POST['Submit'] == "Disable Page") {
 			vcita_trash_current_page($vcita_widget);
+			vcita_trash_current_calendar_page($vcita_widget);
 				
 			$vcita_widget['contact_page_active'] = 'false';
+			$vcita_widget['calendar_page_active'] = 'false';
 			update_option(VCITA_WIDGET_KEY, $vcita_widget);
 						
 		// Make sure page is live if requested to or as default
-		} else if ($_POST['Submit'] == "Activate Page" || $vcita_widget['contact_page_active'] == 'true') {
+		} else if ($_POST['Submit'] == "Activate Page" || $vcita_widget['contact_page_active'] == 'true' || $vcita_widget['calendar_page_active'] == 'true') {
 			$vcita_widget = make_sure_page_published($vcita_widget);
+			$vcita_widget = make_sure_calendar_page_published($vcita_widget);
 		}
 	}
 
@@ -116,6 +121,11 @@ function vcita_admin_actions() {
 				$('#contact-form-switch')
 					.change(function(){
 						toggleSettingsAjax($(this), "vcita_ajax_toggle_contact");
+					});
+
+				$('#calendar-switch')
+					.change(function(){
+						toggleSettingsAjax($(this), "vcita_ajax_toggle_calendar");
 					});
 					
 				var toggleSettingsAjax = function(currObject, action) {	
@@ -354,6 +364,34 @@ function vcita_admin_actions() {
 	    				</div>
 	    				<div class="clear"></div>
 	    			</div>
+	    			<div class="widget-object">
+	    				<a class="left type calendar" data-type="show-calendar" href="<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page=' . VCITA_WIDGET_UNIQUE_ID . '/vcita-calendar-edit.php' ?>">
+	    					<span></span>
+	    					<h4>Scheduling Calendar</h4>
+	    				</a>
+	    				<div class="left buttons">
+	    					<a class="gray-button-style edit" href="<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page=' . VCITA_WIDGET_UNIQUE_ID . '/vcita-calendar-edit.php' ?>"><span></span>Edit</a>
+	    				</div>
+	    				<div class="left buttons">
+							<a class="gray-button-style preview" href="http://<?php echo VCITA_SERVER_BASE ?>/widgets/scheduler?v=<?php echo vcita_get_uid() ?>&ver=2" data-width="700" data-height="500"><span></span>Preview</a>	    	
+						</div>
+	    				<div class="left installation">
+	    					<div class="left">
+	    						<div class="text">
+		    						Add a Book Appointment page:
+	    						</div>
+			    				<div class="onoffswitch">
+								    <input type="checkbox" name="calendar-switch" class="onoffswitch-checkbox" id="calendar-switch" <?php echo(is_calendar_page_available($vcita_widget) ? "checked" : "") ?>>
+								      <label class="onoffswitch-label" for="calendar-switch">
+								        <div class="onoffswitch-inner"></div>
+								        <div class="onoffswitch-switch"></div>
+								    </label>
+								</div>
+	    					</div>
+	    					<div class="clear"></div>
+	    				</div>
+	    				<div class="clear"></div>
+	    			</div>
 	    			<div class="widget-object" id="contact-form-widget" >
 	    				<a class="left type contact-form" data-type="show-contactform" href="<?php echo $url = get_admin_url('', '', 'admin') . 'admin.php?page=' . VCITA_WIDGET_UNIQUE_ID . '/vcita-contact-form-edit.php' ?>" >
 		    				<span></span>
@@ -427,6 +465,12 @@ function vcita_admin_actions() {
 					  </ul>
 					  All for FREE
 					</div>
+					<div class="content calendar">
+					  <h3>Scheduling Calendar</h3>
+					  Add a Scheduling Calendar to your website!
+					  <br>
+					  Present your profile details, and offer you website visitors to set an appointment with you or send you a message.
+					</div>
 				</div>
 	    	</div>
 	    	<div class="links-holder left">
@@ -464,6 +508,8 @@ function vcita_admin_actions() {
 	    	<div class="short-code">
 				<div>Contact Form:</div>
 				<input readonly="" type="text" id="vcita_embed_widget_<?php echo $form_uid;?>" onclick="this.select();" value="[<?php echo VCITA_WIDGET_SHORTCODE; ?> type=contact width=500 height=450]">
+				<div>Scheduling Calendar:</div>
+				<input readonly="" type="text" id="vcita_embed_widget_<?php echo $form_uid;?>" onclick="this.select();" value="[<?php echo VCITA_WIDGET_SHORTCODE; ?> type=scheduler width=500 height=450]">
 				<div>Vertical Sidebar:</div>
 				<input readonly="" type="text" id="vcita_embed_widget_<?php echo $form_uid;?>" onclick="this.select();" value="[<?php echo VCITA_WIDGET_SHORTCODE; ?> type=widget height=400 width=200]">
 				<div >Horizontal Widget:</div>

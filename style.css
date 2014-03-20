@@ -254,6 +254,10 @@ a.gray-button-style.scheduling {
 	background: url('images/active.png') 0 0 no-repeat;
 }
 
+.widgets-management .widget-object .type.calendar span{
+	background: url('images/calendar.png') 0 0 no-repeat;
+}
+
 .widgets-management .widget-object .type.contact-form span{
 	background: url('images/contact.png') 0 0 no-repeat;
 }
@@ -343,22 +347,33 @@ a.gray-button-style.scheduling {
 	opacity: 1;
 }
 
-.widgets-holder #widget-info.show-activeengage, .widgets-holder #widget-info.show-sidebar, .widgets-holder #widget-info.show-contactform {
+.widgets-holder #widget-info.show-activeengage, .widgets-holder #widget-info.show-sidebar, .widgets-holder #widget-info.show-contactform, .widgets-holder #widget-info.show-calendar {
 	display: block;
 }
 
 .widgets-holder #widget-info.show-activeengage {
 	background-image: url('images/ae_prev_anim.gif');
+	padding-left: 430px;
 }
 
 .widgets-holder #widget-info.show-activeengage .active-engage {
 	display: block;
 }
 
+.widgets-holder #widget-info.show-calendar {
+	background-image: url('images/calendar_prev.png');
+	top: 75px;
+  padding-left: 430px;
+}
+
+.widgets-holder #widget-info.show-calendar .calendar {
+	display: block;
+}
+
 .widgets-holder #widget-info.show-contactform {
 	background-image: url('images/contact_prev.png');
 	top: 215px;
-	padding-left: 500px;
+	padding-left: 480px;
 	width: 220px;
 }
 

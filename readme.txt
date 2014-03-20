@@ -4,7 +4,7 @@ Donate link: www.vcita.com?invite=WP-V-SCHD
 Tags: Appointment scheduling, online scheduling, appointment booking, book meetings, book appointment, meet clients, meeting scheduler, online meeting, scheduling, vcita, video meeting, online scheduling, booking calendar, availability, booking, appointment, WordPress Appointment Booking, Appointment Booking Plugin For WordPress Websites
 Requires at least: 2.8
 Tested up to: 3.8
-Stable tag: 3.2.0
+Stable tag: 3.3.0
  
 Online scheduling plugin for WordPress website let leads and clients easily schedule an appointment. The plugin is Free!
  
@@ -32,7 +32,7 @@ http://www.youtube.com/watch?v=3M3Ju5Boejw
 
 
  * **Hassle-free Scheduling Everywhere** - Add an appointment booking and online scheduling option not only to your WordPress website, but also to your email signature, social networks and even directory listings and save time on client scheduling.
- * **Synchronize with Existing Calendars** - Display your up-to-date availability on your WordPress website or blog. Whether you are using Google Calendar, Outlook, Apple calendar, Hotmail, Yahoo or any other calendar. Our WordPress <a href="http://www.vcita.com/software/online_scheduling?invite=WP-V-SCHD">appointment booking</a>plugin syncs with any calendar.
+ * **Synchronize with Existing Calendars** - Display your up-to-date availability on your WordPress website or blog. Whether you are using Google Calendar, Outlook, Apple calendar, Hotmail, Yahoo or any other calendar. Our WordPress appointment booking plugin syncs with any calendar.
  * **Time-zone adjustment**- Your clients can always see your availability, adjusted to their time-zone, and pick the best time for them, when booking an appointment.
  * **Customize and Brand the client experience** - with your language, texts, and logo and theme colors. 
  * **Predefined Services and Meeting Options** - Predefine a variety of services or appointments your clients may request an intro call, phone consultation, phone conference, an in-office appointment, in-person service at another location, a video session, Skype meeting, Google hangout, or any other online meeting.
@@ -55,9 +55,9 @@ Use one of our free <a href="http://www.vcita.com?invite=WP-V-SCHD">Wordpress on
  * Unique appointment options - try vCita phone Conference service,  in which both you and your client receive a local dial-in number, so you can have multiple participants and never share your personal number, vCita video meeting room and more. 
  * Specify a location for your appointments and meetings, call your clients or ask them to call you via phone or Skype.
  * Get booking notifications to your inbox and calendar at any mail service. 
- * **New** - Edit your clients details, add personal notes and more.
- * **New** - Send your clients a customized Invoice for your time or service - Try vCita <a href="http://www.vcita.com/invoice_template?invite=WP-V-SCHD">Invoice Template</a>
- * **New** - create your new customized Public Profile where your clients can easily get to know your offered services and book appointments.
+ * Edit your clients details, add personal notes and more.
+ * Send your clients a customized Invoice for your time or service.
+ * Create your new customized Public Profile where your clients can easily get to know your offered services and book appointments.
  * Fully translated to Spanish
  * Your client will also receive an email invitation with the appointment details (time, location or phone number), as well as an additional reminder just before the appointment starts.
  * Collect payments for your appointments and services or send a separate invoice
@@ -89,7 +89,7 @@ Use one of our free <a href="http://www.vcita.com?invite=WP-V-SCHD">Wordpress on
  * Send a Thank you note once the appointment ended, and offer your clients to set a follow-up booking.
  * ...and many more features!
 
-Learn more about WordPress Appointment Booking and <a href="http://www.vcita.com/software/online_scheduling?invite=WP-V-SCHD">Online Scheduling Plugin</a> by vCita
+<a href="https://www.vcita.com/software/online_scheduling?invite=WP-V-SCHD">Learn more about  WordPress Appointment Booking and Online Scheduling Plugin by vCita</a>  
 
 
 
@@ -126,7 +126,7 @@ Find out more about <a href="http://www.vcita.com?invite=WP-V-SCHD">vCita's appo
 4.      Click on" test drive your online scheduling" and see what your clients will see when booking an appointment with you.
 
 = Select your online booking widget = 
-1.      You can choose to add your appointment booking service as a proactive Scheduling box - "Active engage", a contact form with scheduling option - "Contact form" and a sidebar contact widget - "Sidebar"
+1.      You can choose how to add your appointment booking service:*  **Active Engage** - A proactive scheduling box. This option is most popular as it encourages visitors to contact you and increases your leads*  **Scheduling Calendar** - Add a booking calendar or a service menu directly on your page*  **Contact Form** with an appointment scheduling button*  **Sidebar** - Show appointment scheduling buttons on the side-bar of every page on your site*  **Links and shortcodes**
 2.      Select your prefered widget, and click "Edit" to customize it.
 
 For manual installation instructions and additional widgets - look at the FAQ section
@@ -240,7 +240,7 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
 
 == Changelog == 
 
-
+ = Appointment Booking and online Scheduling by vCita Version 3.3 = * New widget option - Scheduling Calendar
  = Appointment Booking and online Scheduling by vCita Version 3.2 =
  * Adjustments to WordPress "Parker" version 3.8
  * Scheduling for multiple team members

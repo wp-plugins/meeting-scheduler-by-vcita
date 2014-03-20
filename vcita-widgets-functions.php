@@ -71,7 +71,7 @@ function vcita_add_contact($atts) {
         'uid' => $vcita_widget['uid'],
         'id' => '',
         'title' => '',
-        'width' => '100%',
+        'width' => '500px',
         'height' => '450px',
     ), $atts));
 
@@ -98,11 +98,47 @@ function vcita_add_contact($atts) {
 	
 }
 
+function vcita_add_calendar($atts) {
+    $vcita_widget = (array) get_option(VCITA_WIDGET_KEY);
+    extract(shortcode_atts(array(
+        'type' => 'scheduler',
+        'email' => '',
+        'first_name' => '',
+        'last_name' => '',
+        'uid' => $vcita_widget['uid'],
+        'id' => '',
+        'title' => '',
+        'width' => '500px',
+        'height' => '450px',
+    ), $atts));
+
+  // If user isn't available - try and create one.
+    if (!empty($email)) {
+    $vcita_widget['email'] = $email;
+    $vcita_widget['first_name'] = $first_name;
+    $vcita_widget['last_name'] = $last_name;
+    $vcita_widget['uid'] = '';
+        $vcita_widget = generate_or_validate_user($vcita_widget);
+    
+    // Don't save the user as the widget user - just use it 
+    $id = $vcita_widget["uid"]; 
+    
+    } else if (empty($id)) {
+      if (empty($uid)) { 
+        $id = vcita_get_uid();
+      } else {
+      $id = $uid;
+    }
+  }
+
+  return vcita_create_embed_code($type, $id, $width, $height);
+  
+}
+
 /**
  * Create the The iframe HTML Tag according to the given paramters
  */
 function vcita_create_embed_code($type, $uid, $width, $height) {
-	$width = $width . "px";    
     // Only present if UID is available 
     if (isset($uid) && !empty($uid)) {        
 		// Load embed code from the cache if possible
