@@ -21,9 +21,11 @@ if (vcita_scheduler_check_plugin_available('vcita_widget') || vcita_scheduler_ch
 	define('VCITA_WIDGET_API_KEY', 'wp-v-schd');
 	define('VCITA_WIDGET_MENU_NAME', 'vCita Online Scheduling');
 	define('VCITA_WIDGET_SHORTCODE', 'vCitaMeetingScheduler');
+	define('VCITA_CALENDAR_WIDGET_SHORTCODE', 'vCitaSchedulingCalendar');
 	define('VCITA_WIDGET_UNIQUE_ID', 'meeting-scheduler-by-vcita');
 	define('VCITA_WIDGET_UNIQUE_LOCATION', __FILE__);
 	define('VCITA_WIDGET_CONTACT_FORM_WIDGET', 'true');
+	define('VCITA_WIDGET_CALENDAR_WIDGET', 'true');
 	define('VCITA_WIDGET_SHOW_EMAIL_PRIVACY', 'true');
 	define('VCITA_WIDGET_INVITE_CODE', 'WP-V-SCHD');
 	define('VCITA_LOGIN_PATH', VCITA_SERVER_BASE."/integrations/wordpress/new");
@@ -41,6 +43,7 @@ if (vcita_scheduler_check_plugin_available('vcita_widget') || vcita_scheduler_ch
 
 	add_action('plugins_loaded', 'vcita_init');
 	add_shortcode(VCITA_WIDGET_SHORTCODE,'vcita_add_contact');
+	add_shortcode(VCITA_CALENDAR_WIDGET_SHORTCODE,'vcita_add_calendar');
 	add_action('admin_menu', 'vcita_admin_actions');
 	add_action('wp_head', 'vcita_add_active_engage');
 	add_action('wp_enqueue_scripts', 'vcita_jqeury_enqueue');

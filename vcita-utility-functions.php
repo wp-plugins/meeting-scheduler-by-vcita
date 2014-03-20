@@ -32,11 +32,10 @@ function vcita_jqeury_enqueue()
  * Remove the vCita widget and page if available
  */
 function vcita_uninstall() {
-    $vcita_widget = (array) get_option(VCITA_WIDGET_KEY);
-	
+  $vcita_widget = (array) get_option(VCITA_WIDGET_KEY);
 	vcita_trash_current_page($vcita_widget);
-	
-    delete_option(VCITA_WIDGET_KEY);
+  vcita_trash_current_calendar_page($vcita_widget);
+  delete_option(VCITA_WIDGET_KEY);
 }
 
 /**
@@ -251,6 +250,7 @@ function vcita_parse_expert_data($raw_data) {
 						   'email' => $raw_data['email'],
 						   'version' => VCITA_WIDGET_VERSION,
 						   'contact_page_active' => VCITA_WIDGET_CONTACT_FORM_WIDGET,
+               'calendar_page_active' => VCITA_WIDGET_CALENDAR_WIDGET,
 						   'engage_active' => 'true',
 						   'confirmation_token' => $raw_data['confirmation_token'],
 						   'implementation_key' => $raw_data['implementation_key'],
@@ -261,6 +261,8 @@ function vcita_parse_expert_data($raw_data) {
 	update_option(VCITA_WIDGET_KEY, $vcita_widget);
 
 	make_sure_page_published($vcita_widget);
+  make_sure_calendar_page_published($vcita_widget);
+  update_option(VCITA_WIDGET_KEY, $vcita_widget);
 }
 
 /**
@@ -372,6 +374,7 @@ function create_initial_parameters() {
 						   'new_install' => isset($old_params['new_install']) ? $old_params['new_install'] : 'false',
 						   'version' => VCITA_WIDGET_VERSION,
 						   'contact_page_active' => VCITA_WIDGET_CONTACT_FORM_WIDGET,
+               'calendar_page_active' => VCITA_WIDGET_CALENDAR_WIDGET,
 						   'engage_active' => isset($old_params['new_install']) ? $old_params['new_install'] : 'false', // Only active if this is new install
 						   'confirmation_token' => '',
 						   'implementation_key' => '',
@@ -389,10 +392,16 @@ function create_initial_parameters() {
  * 3. If page is in a different state - Create a new one
  */
 function make_sure_page_published($vcita_widget) {
-    $page_id = vcita_default_if_non($vcita_widget, 'page_id');
+
+  $page_id = vcita_default_if_non($vcita_widget, 'page_id');
 	$page = get_page($page_id);
 
 	if (empty($page)) {
+    $page = get_page_by_title('Contact');
+    $page_id = $page->ID;
+  }
+
+  if (empty($page)) {
 		$page_id = add_contact_page();
 
 	} elseif ($page->{"post_status"} == "trash") {
@@ -409,18 +418,67 @@ function make_sure_page_published($vcita_widget) {
 	return $vcita_widget;
 }
 
+function make_sure_calendar_page_published($vcita_widget) {
+  $page_id = vcita_default_if_non($vcita_widget, 'calendar_page_id');
+  $page = get_page($page_id);
+
+  if (empty($page)) {
+    $page = get_page_by_title('Book Appointment');
+    $page_id = $page->ID;
+  }
+
+  if (empty($page)) {
+    $page_id = add_calendar_page();
+
+  } elseif ($page->{"post_status"} == "trash") {
+    wp_untrash_post($page_id);
+
+  } elseif ($page->{"post_status"} != "publish") {
+    $page_id = add_calendar_page();
+  }
+
+  $vcita_widget['calendar_page_id'] = $page_id;
+  $vcita_widget['calendar_page_active'] = 'true';
+  update_option(VCITA_WIDGET_KEY, $vcita_widget);
+
+  return $vcita_widget;
+}
+
 /**
  * Check that the page is available and published
  */
 function is_page_available($vcita_widget) {
 	if (!isset($vcita_widget['page_id']) || empty($vcita_widget['page_id'])) {
-		return false;
-	}
-	
-	$page_id = $vcita_widget['page_id'];
-	$page = get_page($page_id);
+    $page = get_page_by_title('Contact');
+    if(!empty($page) && $page->{"post_status"} == "publish"){
+      return true;
+    }
+    else { 
+      return false;
+    }
+  }
+  else {
+    $page_id = $vcita_widget['page_id'];
+    $page = get_page($page_id);
+    return !empty($page) && $page->{"post_status"} == "publish";
+  }
+}
 
-	return !empty($page) && $page->{"post_status"} == "publish";
+function is_calendar_page_available($vcita_widget) {
+  if (!isset($vcita_widget['calendar_page_id']) || empty($vcita_widget['calendar_page_id'])) {
+    $page = get_page_by_title('Book Appointment');
+    if(!empty($page) && $page->{"post_status"} == "publish"){
+      return true;
+    }
+    else { 
+      return false;
+    }
+  }
+  else {
+    $page_id = $vcita_widget['calendar_page_id'];
+    $page = get_page($page_id);
+    return !empty($page) && $page->{"post_status"} == "publish";
+  }
 }
 
 /**
@@ -428,12 +486,22 @@ function is_page_available($vcita_widget) {
  */
 function add_contact_page() {
     return wp_insert_post(array(
-        'post_name' => 'Contact',
-        'post_title' => 'Contact',
+        'post_name' => 'contact-form',
+        'post_title' => 'Contact Us',
         'post_type' => 'page',
         'post_status' => 'publish',
         'comment_status' => 'closed',
         'post_content' => '['.VCITA_WIDGET_SHORTCODE.']'));
+}
+
+function add_calendar_page() {
+    return wp_insert_post(array(
+        'post_name' => 'appointment-booking',
+        'post_title' => 'Book Appointment',
+        'post_type' => 'page',
+        'post_status' => 'publish',
+        'comment_status' => 'closed',
+        'post_content' => '['.VCITA_CALENDAR_WIDGET_SHORTCODE.']'));
 }
 
 /**
@@ -450,6 +518,30 @@ function vcita_trash_current_page($widget_params) {
 			wp_trash_post($page_id);
 		}
 	}
+  else {
+    $page = get_page_by_title('Contact');
+    if(!empty($page) && $page->{"post_status"} == "publish"){
+      wp_trash_post($page->ID);
+    }
+  }
+}
+
+function vcita_trash_current_calendar_page($widget_params) {
+  
+  if (isset($widget_params['calendar_page_id']) && !empty($widget_params['calendar_page_id'])) {
+    $page_id = $widget_params['calendar_page_id'];
+    $page = get_page($page_id);
+    
+    if (!empty($page) && $page->{"post_status"} == "publish") {
+      wp_trash_post($page_id);
+    }
+  }
+  else {
+    $page = get_page_by_title('Book Appointment');
+    if(!empty($page) && $page->{"post_status"} == "publish"){
+      wp_trash_post($page->ID);
+    }
+  }
 }
 
 /**
