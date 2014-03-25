@@ -71,7 +71,7 @@ function vcita_add_contact($atts) {
         'uid' => $vcita_widget['uid'],
         'id' => '',
         'title' => '',
-        'width' => '500px',
+        'width' => '100%',
         'height' => '450px',
     ), $atts));
 
