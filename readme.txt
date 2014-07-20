@@ -12,10 +12,10 @@ Online scheduling plugin for WordPress website let leads and clients easily sche
 
 vCita Online Scheduling for WordPress plugin offers a self-service online appointment setting to help capture more business<BR>
 
-vCita Online Scheduling software for WordPress quickly integrates into any WordPress website in just minutes, and eliminates the back and forth communicati18:32 ý16/ý07/ý2014ons in appointment setting. Receive notifications of client requests and automate responses so you consistently deliver amazing service that delights your clients!
+vCita Online Scheduling software for WordPress quickly integrates into any WordPress website in just minutes, and eliminates the back and forth communications in appointment setting. Receive notifications of client requests and automate responses so you consistently deliver amazing service that delights your clients!
 
 
->[Homepage](https://www.vcita.com/software/online_scheduling?o=WP "vCita Online Scheduling") | [Scheduling Showcase](http://www.vcita.com/appointment-booking "Showcase") | [Videos](http://www.vcita.com/education_center "tutorials") | [FAQs](http://support.vcita.com/home "vCita support forum") | [For Web Professionals](https://www.vcita.com/partners/web-professionals?invite=wp "partners")
+>[Homepage](https://www.vcita.com/software/online_scheduling?invite=WP-V-SCHD "vCita Online Scheduling") | [Scheduling Showcase](http://www.vcita.com/appointment-booking?invite=WP-V-SCHD "Showcase") | [Videos](http://www.vcita.com/education_center?invite=WP-V-SCHD "tutorials") | [FAQs](http://support.vcita.com/home "vCita support forum") | [For Web Professionals](https://www.vcita.com/partners/web-professionals?o=WP-V-SCHD "partners")
 
 
 
@@ -28,7 +28,7 @@ vCita Online Scheduling software for WordPress quickly integrates into any WordP
 *       __Customize the Experience.__ Add an online list of services, fees and scheduling options. Let clients choose the type of service or how the appointment will be conducted in person, online, by telephone or even via Skype! Clients can choose the right service at the right time for the right price
 *       __Accelerate Business.__ Reduce no-shows by automating confirmations and reminders. Receive automated emails or text messages alerting you to appointment booking requests
 *       __Stay Up-to-Date.__ Automatically sync online calendar with your phone and existing calendar - Outlook, Google, iCal and more
-*       __Flexible & Scalable.__ vCita Online Scheduling WordPpress Plugin grows as your company grows.  Clients can book appointments with specific staff or assign appointments to team members
+*       __Flexible & Scalable.__ vCita Online Scheduling WordPress Plugin grows as your company grows.  Clients can book appointments with specific staff or assign appointments to team members
 
 
 **Use vCita online scheduling Wordpress plugin Free version, or try vCita premium packages with 14 day no obligation trial**
@@ -41,14 +41,14 @@ http://www.youtube.com/watch?v=3M3Ju5Boejw
 * Variety of services to choose from - vCita appointment booking software lets you set many services options: An appointment at your office or at your client's location, a phone call, a video call and even an online service.
 * Questions Customization - Collect all the information you need right when your client schedule an appointment. Add any question you'd like to the scheduling form.
 * Time Zone adjustments - For global businesses, vCita appointment booking plugin can take care of all timezone differences - to help you and your clients in the scheduling process.
-* Set automatic reminders - vCita will notify both you and your client of the comming appointment.
+* Set automatic reminders - vCita will notify both you and your client of the coming appointment.
 * Colors customization - vCita online scheduling plugin lets you brand the whole scheduling process so it would perfectly fit your website's colors and theme. You can even add your business's logo!
 * Track your clients on vCita online scheduling software - Track your clients with Google Analytics, and track conversion for Google Advertising.
 * Let clients select the staff member they wish to work with - You can also assign a contact request or an appointment to a specific staff member.
 * Automatically accept appointments - vCita online scheduler can automatically accept appointments for you, when you're available.
 * Manage your clients on vCita - Add personal notes, edit client information, and even set follow-up reminders.
 * Highly comfortable for your clients - Clients can easily reschedule or send a note before or after the meeting.
-* Unlimited number of appointments, Unlimited number of clients.
+* Unlimited number of appointments, unlimited number of clients.
 * Calendar management - Manage your availability and mark times when you are not available on your vCita calendar.
 * Quick onboarding - import all your existing clients to vCita online scheduler, to easily manager all your clients on vCita.
 * Fully translated to Spanish - vCita online scheduling plugin for WordPress is available on Spanish as well!
