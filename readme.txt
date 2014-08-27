@@ -3,8 +3,10 @@ Contributors: vCita
 Donate link: www.vcita.com?invite=WP-V-SCHD
 Tags: Appointment scheduling, online scheduling, appointment booking, book meetings, book appointment, appointments, meet clients, meeting scheduler, online meeting, appointment calendar, Calendar, booking calendar, scheduling, vcita, video meeting, online scheduling, availability, booking, appointment, WordPress Appointment Booking, Appointment Booking Plugin For WordPress Websites
 Requires at least: 2.8
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: 3.4.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
  
 Online scheduling plugin for WordPress website let leads and clients easily schedule appointments.
  
