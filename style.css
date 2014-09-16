@@ -430,8 +430,16 @@ a.with-icon.scheduling {
 
 
 .vcita-footer .web-developers {
-	background: url('images/pro_banner.png') 0 0 no-repeat;
-	width: 671px;
+	background: url('images/pro_banner.png') 0 32px no-repeat;
+	width: 471px;
+	height: 125px;
+	display: block;
+	margin: 14px;
+}
+
+.vcita-footer .rate-us {
+	background: url('images/rate_us.png') 0 32px no-repeat;
+	width: 171px;
 	height: 125px;
 	display: block;
 	margin: 14px;

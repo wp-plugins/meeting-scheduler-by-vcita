@@ -481,6 +481,7 @@ function vcita_admin_actions() {
 	    	</div>
 	    	<div class="clear"></div>
 	    	<div class="vcita-footer">
+	    		<a class="rate-us left" target="_blank" href="http://wordpress.org/support/view/plugin-reviews/meeting-scheduler-by-vcita"></a>
 	    		<a class="web-developers left" target="_blank" href="http://<?php echo VCITA_SERVER_BASE ?>/partners/web-professionals?invite=<?php echo VCITA_WIDGET_INVITE_CODE ?>"></a>
 	    		<div class="more-offers left">
 	    			<div class="green">vCita has a lot more to offer!</div>
