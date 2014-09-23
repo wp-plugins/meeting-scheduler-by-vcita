@@ -4,8 +4,10 @@ Donate link: www.vcita.com?invite=WP-V-SCHD
 Tags: Appointment scheduling, online scheduling, appointment booking, book meetings, book appointment, appointments, meet clients, meeting scheduler, online meeting, appointment calendar, Calendar, booking calendar, scheduling, vcita, video meeting, online scheduling, availability, booking, appointment, WordPress Appointment Booking, Appointment Booking Plugin For WordPress Websites
 Requires at least: 2.8
 Tested up to: 4.0
-Stable tag: 3.4.0
+Stable tag: 3.4.1
+
 License: GPLv2 or later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
  
 Online scheduling plugin for WordPress website let leads and clients easily schedule appointments.
@@ -16,6 +18,7 @@ vCita Online Scheduling for WordPress plugin offers a self-service online appoin
 
 vCita Online Scheduling software for WordPress quickly integrates into any WordPress website in just minutes, and eliminates the back and forth communications in appointment setting. Receive notifications of client requests and automate responses so you consistently deliver amazing service that delights your clients!
 
+The plugin connects to your vCita account. You may create a FREE account at vCita directly from the plugin.
 
 >[Homepage](https://www.vcita.com/software/online_scheduling?invite=WP-V-SCHD "vCita Online Scheduling") | [Scheduling Showcase](http://www.vcita.com/appointment-booking?invite=WP-V-SCHD "Showcase") | [Videos](http://www.vcita.com/education_center?invite=WP-V-SCHD "tutorials") | [FAQs](http://support.vcita.com/home "vCita support forum") | [For Web Professionals](https://www.vcita.com/partners/web-professionals?o=WP-V-SCHD "partners")
 
@@ -204,6 +207,11 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
 1. **Track and Manage Clients** - Keep track of all your business contacts in one place.
 
 == Changelog == 
+
+ = Appointment Booking and online Scheduling by vCita Version 3.4.1 =
+ * Compatibility with 4.0
+ * Few Bugs Fixed
+
  = Appointment Booking and online Scheduling by vCita Version 3.4.0 =
  * LiveSite Widget
  * Improved contact management options
