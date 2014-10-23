@@ -4,13 +4,13 @@ Donate link: www.vcita.com?invite=WP-V-SCHD
 Tags: Appointment scheduling, online scheduling, appointment booking, book meetings, book appointment, appointments, meet clients, meeting scheduler, online meeting, appointment calendar, Calendar, booking calendar, scheduling, vcita, video meeting, online scheduling, availability, booking, appointment, WordPress Appointment Booking, Appointment Booking Plugin For WordPress Websites
 Requires at least: 2.8
 Tested up to: 4.0
-Stable tag: 3.4.1
+Stable tag: 3.4.0
 
 License: GPLv2 or later
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
  
-Online scheduling plugin for WordPress website let leads and clients easily schedule appointments.
+Offer self-service online appointment scheduling for your clients and get more appointments in less time
  
 == Description ==
 
@@ -199,23 +199,20 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
 
 == Screenshots ==
 
-1. **Online Scheduling** - Your clients can see your availability, automatically adjusted to their time-zone.
-1. **Proactive scheduling Form** - Get more leads out of your website by actively approaching visitors with an invitation to contact you and send booking requests.
-1. **Offer Services** - Choose the kinds of services or appointments your contacts may request.
-1. **Email Notifications** - Your contact will instantly receive a customized email message when submitting an online scheduling request. Once you accept the booking request, vCita will add the appointment to your calendar.
-1. **Single Dashboard** - A single dashboard to manage all booking requests, follow-ups, invoices, email campaigns and much more
-1. **Track and Manage Clients** - Keep track of all your business contacts in one place.
+1. **Online Scheduling** - Clients can schedule a consultation, an appointment or a service – at their convenience, right on your site.
+1. With a list of services, fees and scheduling options, clients can choose the right service at the right time for the right price. Appointments can be conducted at any location, by phone, via Skype or any online meeting.
+1. Clients can set and reschedule appointments anytime, from any device.
+1. **LiveSite Widget** - Encourage more visitors and potential clients to take action, and get more appointments in less time.
+1. Customize your scheduling widget to perfectly match your website and business need.
+1. Customize your business hours and sync with your phone and existing calendar—Outlook, Google, iCal and more.
 
 == Changelog == 
 
  = Appointment Booking and online Scheduling by vCita Version 3.4.1 =
  * Compatibility with 4.0
- * Few Bugs Fixed
-
- = Appointment Booking and online Scheduling by vCita Version 3.4.0 =
+ * Screenshots update
  * LiveSite Widget
  * Improved contact management options
-
 
  = Appointment Booking and online Scheduling by vCita Version 3.3.2 =
  * Adjustments to WordPress version 3.9
@@ -262,6 +259,3 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
  = Appointment Booking and online Scheduling by vCita Version Version 1.0.0 (12 Feb 2012) = 
   * Initial Version
 
-== Upgrade Notice ==
-= vCita Appointment Booking and online Scheduling version 3.2 = 
- * Adjustments to WordPress "Parker" version 3.8
