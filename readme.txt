@@ -208,7 +208,7 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
 
 == Changelog == 
 
- = Appointment Booking and online Scheduling by vCita Version 3.4.1 =
+ = Appointment Booking and online Scheduling by vCita Version 3.4.0 =
  * Compatibility with 4.0
  * Screenshots update
  * LiveSite Widget
