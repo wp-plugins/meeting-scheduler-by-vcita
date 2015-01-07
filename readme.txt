@@ -1,10 +1,10 @@
-=== WordPress Appointment Booking and Online Scheduling Plugin by vCita ===
+﻿=== WordPress Appointment Booking and Online Scheduling Plugin by vCita ===
 Contributors: vCita
 Donate link: www.vcita.com?invite=WP-V-SCHD
-Tags: Appointment scheduling, online scheduling, appointment booking, book meetings, book appointment, appointments, meet clients, meeting scheduler, online meeting, appointment calendar, Calendar, booking calendar, scheduling, vcita, video meeting, online scheduling, availability, booking, appointment, WordPress Appointment Booking, Appointment Booking Plugin For WordPress Websites
+Tags: Appointment scheduling, online scheduling, appointment booking, booking calendar, book meetings, book appointment, appointments, meet clients, meeting scheduler, online meeting, appointment calendar, Calendar, scheduling, vcita, video meeting, online scheduling, availability, booking, appointment, WordPress Appointment Booking, Google Calendar, Appointment Booking Plugin For WordPress Websites
 Requires at least: 2.8
-Tested up to: 4.0
-Stable tag: 3.4.0
+Tested up to: 4.1
+Stable tag: 3.5.0
 
 License: GPLv2 or later
 
@@ -20,7 +20,7 @@ vCita Online Scheduling software for WordPress quickly integrates into any WordP
 
 The plugin connects to your vCita account. You may create a FREE account at vCita directly from the plugin.
 
->[Homepage](https://www.vcita.com/software/online_scheduling?invite=WP-V-SCHD "vCita Online Scheduling") | [Scheduling Showcase](http://www.vcita.com/appointment-booking?invite=WP-V-SCHD "Showcase") | [Videos](http://www.vcita.com/education_center?invite=WP-V-SCHD "tutorials") | [FAQs](http://support.vcita.com/home "vCita support forum") | [For Web Professionals](https://www.vcita.com/partners/web-professionals?o=WP-V-SCHD "partners")
+>[Homepage](https://www.vcita.com/software/online_scheduling?invite=WP-V-SCHD "vCita Online Scheduling") | [Scheduling Showcase](http://www.vcita.com/appointment-booking?invite=WP-V-SCHD "Showcase") | [Videos](http://www.vcita.com/education_center?invite=WP-V-SCHD "tutorials") | [FAQs](http://support.vcita.com/home "vCita support forum") | [For Web Professionals](https://www.vcita.com/partners/web-professionals?o=WP-V-SCHD&invite=o=WP-V-SCHD "partners")
 
 
 
@@ -76,7 +76,7 @@ Find out more about <a href="http://www.vcita.com?invite=WP-V-SCHD">vCita appoin
 6.      Insert your first name and last name in the pop-up window and click "Submit" to continue to editing you online booking preferences.
 
 
-= customize your online booking prefrences =
+= customize your online booking preferences  =
 1.	Click on "Go to settings".
 2.      Follow the "online scheduling wizard" to set all you scheduling and online booking preferences.
 3.      Once done- return to your Wordpress admin panel. 
@@ -91,7 +91,7 @@ Find out more about <a href="http://www.vcita.com?invite=WP-V-SCHD">vCita appoin
 
 *  **Contact Form** with an appointment scheduling button
 
-*  **Sidebar** - Show appointment scheduling buttons on the side-bar of every page on your site
+*  **Sidebar** - Show appointment scheduling buttons on the sidebar of every page on your site
 
 *  **Links and shortcodes**
 
@@ -137,10 +137,10 @@ Visit our support forum to see how to <a href="http://support.vcita.com/forums/2
 
 = How and where do I see my booking requests? = 
 Once a clients sends you a booking request using one of vCita's booking widgets, the new booking request will be added to a "Require your attention" area in your vCita dashboard.
-In additional, for any new or updated booking request you will recieve an email notification, so you could accept, decline or reschedule from wherever you are.
+In addition, for any new or updated booking request you will receive an email notification, so you could accept, decline or reschedule from wherever you are.
 Once the booking request is approved by you, the appointment will be added to your vCita calendar view, as well as to your existing calendar and your client's calendar.
 A reminder for the upcoming appointment will be sent to both you and your client 15 minutes before the appointment takes place.
-Once the appointment time is over, you will recieve an email suggesting you to some follow-up options.
+Once the appointment time is over, you will receive an email suggesting you to some follow-up options.
 You can always see your booking requests in your email (using any device), your calendar and your vCita dashboard.
 
 
@@ -169,7 +169,7 @@ Each user will get an email to confirm his email address and upload an image to 
 
 = Which advanced booking options do I have? = 
   * Allow online booking based on your on-time availability
-  * Replay to booking requests from anywhere - recieve booking requests to your email and replay even when you're on the go.
+  * Reply to booking requests from anywhere - receive booking requests to your email and replay even when you're on the go.
   * Allow vCIta to auto-accept booking requests when you're available.
   * Offer clients to suggest up to 3 time-slots when booking an appointment with you.
   * Set your general availability.
@@ -183,7 +183,7 @@ Each user will get an email to confirm his email address and upload an image to 
   * Ask your client to provide phone number with any booking request
   * Accept, decline and reschedule booking requests from a calendar view
   * All booking requests are added to your existing calendar
-  * Booking is doen in 2 simple steps
+  * Booking is done in 2 simple steps
 
 <br>
 Have More questions? Need assistance? <a href="http://support.vcita.com/home">Visit our Support forum and FAQ</a>
@@ -208,6 +208,12 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
 
 == Changelog == 
 
+ = Appointment Booking and online Scheduling by vCita Version 3.5.0 =
+ * Compatibility with WordPress 4.1
+ * Added more flexibility with availability settings
+ * Enabled different availability per service.
+ * Added the option to set preparation time per service.
+
  = Appointment Booking and online Scheduling by vCita Version 3.4.0 =
  * Compatibility with 4.0
  * Screenshots update
@@ -216,7 +222,7 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
 
  = Appointment Booking and online Scheduling by vCita Version 3.3.2 =
  * Adjustments to WordPress version 3.9
- * Improved scheduling for multiple team members, including option to asign a contact to specific staff member
+ * Improved scheduling for multiple team members, including option to assign a contact to specific staff member
  * Improved mobile view on the scheduling process
 
  = Appointment Booking and online Scheduling by vCita Version 3.3 =

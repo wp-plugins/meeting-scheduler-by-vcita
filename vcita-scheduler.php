@@ -3,7 +3,7 @@
 Plugin Name: Meeting Scheduler by vCita
 Plugin URI: http://www.vcita.com
 Description: Meeting Scheduler by vCita proves to increase the number of contact form requests 
-Version: 3.4.0
+Version: 3.5.0
 Author: vCita.com
 Author URI: http://www.vcita.com
 */
