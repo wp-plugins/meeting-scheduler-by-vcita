@@ -4,7 +4,7 @@ Donate link: www.vcita.com?invite=WP-V-SCHD
 Tags: Appointment scheduling, online scheduling, appointment booking, booking calendar, book meetings, book appointment, appointments, meet clients, meeting scheduler, online meeting, appointment calendar, Calendar, scheduling, vcita, video meeting, online scheduling, availability, booking, appointment, WordPress Appointment Booking, Google Calendar, Appointment Booking Plugin For WordPress Websites
 Requires at least: 2.8
 Tested up to: 4.1
-Stable tag: 3.5.0
+Stable tag: 3.6.0
 
 License: GPLv2 or later
 
@@ -58,7 +58,12 @@ http://www.youtube.com/watch?v=3M3Ju5Boejw
 * Quick onboarding - import all your existing clients to vCita online scheduler, to easily manager all your clients on vCita.
 * Fully translated to Spanish - vCita online scheduling plugin for WordPress is available on Spanish as well!
 
-
+= vCita appointment booking and online scheduling now available in the following Languages: = 
+* English
+* Spanish
+* Franch
+* Polish
+* Hebrew
 
 Find out more about <a href="http://www.vcita.com?invite=WP-V-SCHD">vCita appointment booking and online scheduling plugin</a>  
 
@@ -207,7 +212,12 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
 1. Customize your business hours and sync with your phone and existing calendar—Outlook, Google, iCal and more.
 
 == Changelog == 
-
+ = Appointment Booking and online Scheduling by vCita Version 3.6.0 =
+ * New "Future booking" setting which lets you set Maximum time for advance bookings, to prevent appointments from being scheduled to far in advance
+ * New design for the email notifications sent from vCita to you & your clients
+ * More customization for the emails including branding colors and logo
+ * New! Email signature option was added
+ 
  = Appointment Booking and online Scheduling by vCita Version 3.5.0 =
  * Compatibility with WordPress 4.1
  * Added more flexibility with availability settings
@@ -265,3 +275,6 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
  = Appointment Booking and online Scheduling by vCita Version Version 1.0.0 (12 Feb 2012) = 
   * Initial Version
 
+== Upgrade Notice ==
+ = Appointment Booking and online Scheduling by vCita Version 3.6.0 =
+New "Future booking" setting was added! Set Maximum time for advance bookings and prevent appointments from being scheduled to far in advance
