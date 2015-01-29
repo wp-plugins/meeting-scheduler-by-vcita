@@ -8,7 +8,8 @@
 function vcita_add_active_engage() {
 	$vcita_widget = (array) get_option(VCITA_WIDGET_KEY);
 	
-	if (!is_admin() && $vcita_widget['engage_active'] == 'true') {
+	console.log(window.LiveSite.config.profileUrl);
+  if (!is_admin() && $vcita_widget['engage_active'] == 'true') {
 		// Will be added to the head of the page
 		?>
 		 <script type="text/javascript">//<![CDATA[
