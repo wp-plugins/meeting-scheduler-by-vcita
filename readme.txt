@@ -4,7 +4,7 @@ Donate link: www.vcita.com?invite=WP-V-SCHD
 Tags: Appointment scheduling, online scheduling, appointment booking, booking calendar, book meetings, book appointment, appointments, meet clients, meeting scheduler, online meeting, appointment calendar, Calendar, scheduling, vcita, video meeting, online scheduling, availability, booking, appointment, WordPress Appointment Booking, Google Calendar, Appointment Booking Plugin For WordPress Websites
 Requires at least: 2.8
 Tested up to: 4.1
-Stable tag: 3.6.0
+Stable tag: 3.7.0
 
 License: GPLv2 or later
 
@@ -212,6 +212,12 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
 1. Customize your business hours and sync with your phone and existing calendar—Outlook, Google, iCal and more.
 
 == Changelog == 
+ = Appointment Booking and online Scheduling by vCita Version 3.7.0 =
+ * New - collect online payments using Stripe.
+ * Customize and better control the automatic email notifications sent to your clients and your business. 
+ * Set Future Booking Cut-Off Date 
+ * More Layouts for the LiveSite Widget
+
  = Appointment Booking and online Scheduling by vCita Version 3.6.0 =
  * New "Future booking" setting which lets you set Maximum time for advance bookings, to prevent appointments from being scheduled to far in advance
  * New design for the email notifications sent from vCita to you & your clients
@@ -276,5 +282,7 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
   * Initial Version
 
 == Upgrade Notice ==
- = Appointment Booking and online Scheduling by vCita Version 3.6.0 =
-New "Future booking" setting was added! Set Maximum time for advance bookings and prevent appointments from being scheduled to far in advance
+ = Appointment Booking and online Scheduling by vCita Version 3.7.0 =
+ * New - collect online payments using Stripe.
+ * Customize and better control the automatic email notifications sent to your clients and your business. 
+ * Set Future Booking Cut-Off Date
