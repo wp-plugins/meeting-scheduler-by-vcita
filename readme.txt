@@ -1,10 +1,10 @@
 ﻿=== WordPress Appointment Booking and Online Scheduling Plugin by vCita ===
 Contributors: vCita
 Donate link: www.vcita.com?invite=WP-V-SCHD
-Tags: Appointment scheduling, online scheduling, appointment booking, booking calendar, book meetings, book appointment, appointments, meet clients, meeting scheduler, online meeting, appointment calendar, Calendar, scheduling, vcita, video meeting, online scheduling, availability, booking, appointment, WordPress Appointment Booking, Google Calendar, Appointment Booking Plugin For WordPress Websites
+Tags: Appointment scheduling, online scheduling, appointment booking, booking calendar, book meetings, book appointment, appointments, meet clients, meeting scheduler, online meeting, appointment calendar, Calendar, scheduling, vcita, video meeting, online scheduling, availability, booking, appointment, WordPress Appointment Booking, Google Calendar, Appointment Booking Plugin For WordPress Websites, multilingual
 Requires at least: 2.8
-Tested up to: 4.1
-Stable tag: 3.7.0
+Tested up to: 4.2.2
+Stable tag: 3.8.0
 
 License: GPLv2 or later
 
@@ -58,10 +58,13 @@ http://www.youtube.com/watch?v=3M3Ju5Boejw
 * Quick onboarding - import all your existing clients to vCita online scheduler, to easily manager all your clients on vCita.
 * Fully translated to Spanish - vCita online scheduling plugin for WordPress is available on Spanish as well!
 
-= vCita appointment booking and online scheduling now available in the following Languages: = 
+= Translations =
+vCita appointment booking and online scheduling is fully translated to:
+
 * English
 * Spanish
-* Franch
+* French
+* Portuguese
 * Polish
 * Hebrew
 
@@ -212,6 +215,10 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
 1. Customize your business hours and sync with your phone and existing calendar—Outlook, Google, iCal and more.
 
 == Changelog == 
+ = Appointment Booking and online Scheduling by vCita Version 3.8.0 =
+ * Compatibility with WordPress 4.2
+ * New! SMS reminders to clients
+
  = Appointment Booking and online Scheduling by vCita Version 3.7.0 =
  * New - collect online payments using Stripe.
  * Customize and better control the automatic email notifications sent to your clients and your business. 
@@ -282,7 +289,5 @@ Please visit <a href="http://www.vcita.com/about/privacy_policy?invite=wp-v-schd
   * Initial Version
 
 == Upgrade Notice ==
- = Appointment Booking and online Scheduling by vCita Version 3.7.0 =
- * New - collect online payments using Stripe.
- * Customize and better control the automatic email notifications sent to your clients and your business. 
- * Set Future Booking Cut-Off Date
+= Appointment Booking and online Scheduling by vCita Version 3.8.0 =
+ * New! SMS reminders to clients + Compatibility with WordPress 4.2
